@@ -7,13 +7,13 @@ const sr = ScrollReveal({
   // reset: true
 });
 
-sr.reveal(".container");
-sr.reveal("h1, img, p", { interval: 300 });
-sr.reveal(".form-control", { delay: 500 });
-sr.reveal(".remember-button", {
+// sr.reveal(".container");
+// sr.reveal("h1, img, p", { interval: 400 });
+sr.reveal(".logo img", { delay: 400 });
+sr.reveal(".logo img", {
   origin: "top",
   delay: 1000,
 });
-sr.reveal(".form-control", { interval: 300 });
-sr.reveal(".remember", { origin: "right" });
-sr.reveal(".button", { origin: "left" });
+// sr.reveal(".form-control", { interval: 400 });
+// sr.reveal(".remember", { origin: "right" });
+// sr.reveal(".button", { origin: "left" });

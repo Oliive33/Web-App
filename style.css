@@ -57,7 +57,7 @@ body::before {
   border-radius: 6px;
   box-shadow: 0 0 3px #333;
   margin-top: 140px;
-  /* height: 100vh; */
+  height: auto;
 }
 .container h1 img {
   width: 50px;
