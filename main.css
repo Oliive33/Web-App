@@ -725,7 +725,7 @@ main {
   position: relative;
   width: 350px;
   height: 100%;
-  background-image: url(../../media/basic-pics/parchemin.jpg);
+  background-image: url(../media/basic-pics/parchemin.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
