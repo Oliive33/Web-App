@@ -34,7 +34,7 @@ let newSwiper = new Swiper(".new-swiper", {
 
   pagination: {
     el: ".swiper-pagination",
-    dynamicBullets: true,
+    dynamicBullets: false,
   },
   breakpoints: {
     992: {
