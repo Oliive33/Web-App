@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 /*===== VARIABLES CSS =====*/
 
@@ -325,6 +326,7 @@ main {
   font-size: 12px;
   margin: 7px 0 7px 0;
   font-weight: bolder;
+  font-family: "Courgette", cursive;
 }
 .text_repas {
   display: flex;
@@ -437,7 +439,7 @@ main {
     position: relative;
     width: 335px;
     height: 381px;
-    padding: 2px;
+    padding: 5px;
     margin-bottom: 1rem;
   }
   .new__card-date {
@@ -445,7 +447,7 @@ main {
     margin-bottom: 15px;
   }
   .name_repas {
-    font-size: 10px;
+    font-size: 13px;
     margin: 5px 0 5px 0;
   }
   .swiper-button-next::after,
