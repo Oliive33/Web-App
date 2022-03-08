@@ -238,6 +238,10 @@ body {
           transform: scale(0.95);
 }
 
+.btn-connection {
+  padding: 5px 15px;
+}
+
 /* Responsive style */
 @media screen and (max-width: 768px) {
   .logo .img {
@@ -257,8 +261,8 @@ body {
     margin: 90px auto 0;
   }
   .container h1 img {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
   .head-container p {
     font-size: 13px;
@@ -284,6 +288,9 @@ body {
     margin: 30px 0 0 20px;
     padding: 10px 5px;
     font-size: 13px;
+  }
+  .btn-connection {
+    font-size: 12px;
   }
 }
 
@@ -594,7 +601,7 @@ img {
   padding: 2px;
   border-radius: 4px;
   text-align: center;
-  margin-bottom: 3.8rem;
+  margin-bottom: 1rem;
   overflow: hidden;
 }
 
@@ -802,6 +809,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 50px;
 }
 
 .btn-crea .btn-new-menu {
@@ -923,7 +931,7 @@ img {
 
 .top-modif-menu .titre-page-menu {
   text-align: center;
-  margin: 80px 0 40px 0;
+  margin: 80px 0 25px 0;
 }
 
 .top-modif-menu .logo-restaurant {
@@ -1026,7 +1034,7 @@ img {
 }
 
 .comment {
-  margin-top: 50px;
+  margin-top: 20px;
   background: transparent;
   padding: 5px 20px;
   font-size: 14px;
@@ -1044,6 +1052,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
 }
 
 .btn-send-menu .btn-menu-sent {

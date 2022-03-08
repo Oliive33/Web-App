@@ -6,7 +6,7 @@
 // =================Section top-modif-menu=================//
 .top-modif-menu .titre-page-menu {
   text-align: center;
-  margin: 80px 0 40px 0;
+  margin: 80px 0 25px 0;
 }
 
 .top-modif-menu .logo-restaurant {
@@ -86,7 +86,7 @@
 
 // =================Section modif-bottom-menu===========//
 .comment {
-  margin-top: 50px;
+  margin-top: 20px;
   background: transparent;
   padding: 5px 20px;
   font-size: 14px;
@@ -97,6 +97,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
+  margin-bottom: 30px;
 }
 .btn-send-menu .btn-menu-sent {
   padding: 5px 15px;

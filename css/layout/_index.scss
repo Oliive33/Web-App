@@ -163,6 +163,9 @@ body {
 .button:active {
   transform: scale(0.95);
 }
+.btn-connection {
+  padding: 5px 15px;
+}
 /* Responsive style */
 @media screen and (max-width: 768px) {
   .logo .img {
@@ -181,8 +184,8 @@ body {
     margin: 90px auto 0;
   }
   .container h1 img {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
   .head-container p {
     font-size: 13px;
@@ -208,6 +211,9 @@ body {
     margin: 30px 0 0 20px;
     padding: 10px 5px;
     font-size: 13px;
+  }
+  .btn-connection {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 350px) {
