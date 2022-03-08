@@ -583,14 +583,7 @@ img {
 }
 
 .page-menu {
-  margin: 5px auto 5px;
-}
-
-.titre-page-menu {
-  margin-top: 25px;
-  margin-bottom: 30px;
-  font-size: 25px;
-  font-family: var(--title-font);
+  margin: 100px auto 5px;
 }
 
 .new__card {
@@ -791,8 +784,8 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  main {
-    margin: 40px auto 50px;
+  .page-menu {
+    margin: -30px auto 0px;
   }
   .header {
     padding: 3px 1.5rem;
@@ -843,13 +836,13 @@ img {
   }
   .swiper-button-next,
   .swiper-button-prev {
-    height: 10.9rem;
+    height: 14.9rem;
   }
   .new__card-date .new__card-phrase {
     font-size: 14px;
   }
   .btn-crea .btn-new-menu {
-    padding: 6px 5px;
+    padding: 8px 5px;
     font-size: 12px;
   }
 }
