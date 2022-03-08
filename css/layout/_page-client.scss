@@ -15,6 +15,10 @@
 
   /*===== fonts & typos =====*/
   --body-font: "Poppins", sans-serif;
+  --title-font: "Hammersmith One", sans-serif;
+  --date-font: "Hammersmith One", sans-serif;
+  --phrase-bottom-font: "Hammersmith One", sans-serif;
+  --menu-font: "Handlee", cursive;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
 
@@ -34,7 +38,7 @@
   margin: 0;
   padding: 0;
 }
-main {
+.page-client {
   margin: 50px auto 50px;
 }
 .container-client {
@@ -56,12 +60,12 @@ main {
   margin: 40px 0 10px 0;
 }
 .items-card-client h3 {
-  font-family: "Hammersmith One", sans-serif;
+  font-family: var(--title-font);
   letter-spacing: 1px;
   margin: 52px 0px 15px 0;
 }
 .items-card-client .items-card-datejour {
-  font-family: "Hammersmith One", sans-serif;
+  font-family: var(--date-font);
   font-size: 14px;
   font-weight: 300;
 }
@@ -79,7 +83,7 @@ main {
   font-size: 16px;
   //   font-family: "Courgette", cursive;
   //   font-family: "Shadows Into Light", cursive;
-  font-family: "Handlee", cursive;
+  font-family: var(--menu-font);
   //   font-family: "Short Stack", cursive;
 }
 .name_repas {
@@ -87,7 +91,7 @@ main {
   margin: 7px 0 7px 0;
   font-weight: bolder;
   //   font-family: "Courgette", cursive;
-  font-family: "Handlee", cursive;
+  font-family: var(--menu-font);
 }
 .name_repas-soustitre-client {
   font-size: 10px;
@@ -125,7 +129,7 @@ main {
   margin-bottom: 5px;
 }
 .new__card-client .new__card-phrase-client {
-  font-family: "Hammersmith One", sans-serif;
+  font-family: var(--phrase-bottom-font);
   font-size: 17px;
   font-weight: bold;
   letter-spacing: 1px;
