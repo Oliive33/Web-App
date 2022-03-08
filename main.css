@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @font-face {
   font-family: "Noto Sans";
   src: url("./fonts/NotoSans-Italic.ttf") format("truetype");
@@ -56,7 +61,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -10000;
-  background: url(./media/basic-pics/restaurant.jpg);
+  background: url(https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -726,8 +731,8 @@ main {
   position: relative;
   width: 350px;
   height: 100%;
-  -webkit-box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
-          box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+  -webkit-box-shadow: 0 8px 7px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 7px rgba(0, 0, 0, 0.1);
   padding: 2px;
   border-radius: 4px;
   text-align: center;
@@ -989,5 +994,182 @@ main {
   background: #000;
   border-radius: 14px;
   color: #fff;
+}
+
+/*===== GOOGLE FONTS =====*/
+/*===== VARIABLES CSS =====*/
+:root {
+  /*===== Colors =====*/
+  --first-color: rgba(253, 7, 7, 0.973);
+  --dark-color: #070d1f;
+  --dark-color-alt: #282b3a;
+  --white-color: #e6e7e9;
+  /*===== fonts & typos =====*/
+  --body-font: "Poppins", sans-serif;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  /*===== z index =====*/
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+  }
+}
+
+/*===== BASE =====*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 50px auto 50px;
+}
+
+.container-client {
+  position: relative;
+  width: 350px;
+  height: 100%;
+  -webkit-box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+          box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+  background-image: url(../media/basic-pics/parchemin.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 1.8rem;
+  overflow: hidden;
+}
+
+.items-card-client {
+  margin: 40px 0 10px 0;
+}
+
+.items-card-client h3 {
+  font-family: "Hammersmith One", sans-serif;
+  letter-spacing: 1px;
+  margin: 52px 0px 15px 0;
+}
+
+.items-card-client .items-card-datejour {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.repas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7.8px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.repas .title_repas {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Handlee", cursive;
+}
+
+.name_repas {
+  font-size: 13px;
+  margin: 7px 0 7px 0;
+  font-weight: bolder;
+  font-family: "Handlee", cursive;
+}
+
+.name_repas-soustitre-client {
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: -5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.text_repas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.repas-et-soustitre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 0.5rem;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  color: red;
+  font-weight: bold;
+}
+
+.new__card-client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+  margin-bottom: 5px;
+}
+
+.new__card-client .new__card-phrase-client {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.new__card-client .img-card-client {
+  width: 50px;
+  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */

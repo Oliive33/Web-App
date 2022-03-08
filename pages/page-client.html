@@ -13,7 +13,7 @@
     <meta property="og:description" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
-    <title>Projet web app</title>
+    <title>Page menu restaurateur</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -43,46 +43,64 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../main.css" />
   </head>
 
   <body>
-    <div class="logo">
-      <img
-        class="img"
-        src="../media/logos/QRcomlogo-300.jpg"
-        alt="logo image qr"
-      />
-    </div>
-    <div class="container">
-      <div class="head-container">
-        <h1>
-          <img src="./media/logos/QRcomlogo-300.jpg" alt="logo web app" />
-        </h1>
-        <p>Lorem ipsum dolor sit.(phrase accroche ou slogan)</p>
+    <div class="container-client">
+      <div class="top-card">
+        <div class="top-card-certification">
+          <span>Nom restaurant/logo</span>
+        </div>
       </div>
-      <div class="form-control">
-        <input type="text" required />
-        <label for="Email">Nom utilisateur ou adresse mail</label>
+      <div class="items-card-client">
+        <h3 class="items-card-title-client">Menu du Jour</h3>
+        <p class="items-card-datejour">Lundi 01/01/2022</p>
       </div>
-      <div class="form-control">
-        <input type="password" required />
-        <label for="Password">Mot de passe</label>
-      </div>
-      <div class="remember-button">
-        <div class="input-check">
-          <input class="checkbox" type="checkbox" id="remember" />
-          <div class="label">
-            <label for="remember">Se souvenir de moi</label>
+      <div class="items-price-and-type">
+        <div class="repas">
+          <h5 class="title_repas">Nos 3 formules du jour</h5>
+          <div class="text_repas">
+            <p class="name_repas">Plat du jour seul</p>
+            <span class="prix">12€</span>
+          </div>
+          <div class="text_repas">
+            <p class="name_repas">Entrée + plat ou Plat + Dessert</p>
+            <span class="prix">16€</span>
+          </div>
+          <div class="text_repas">
+            <h5 class="name_repas">Entrée : Salade ou Crudité</h5>
+          </div>
+          <div class="text_repas repas-et-soustitre">
+            <h5 class="name_repas">
+              Plat du jour 1: Colombo de cabri / Riz Haricots rouges
+            </h5>
+            <p class="name_repas name_repas-soustitre-client">
+              Cabri local cuit au feu de bois et haricots rouges au lait de coco
+            </p>
+          </div>
+          <div class="text_repas">
+            <h5 class="name_repas">
+              Plat du jour 2: Darne de dorade / Racines
+            </h5>
+          </div>
+          <div class="text_repas">
+            <h5 class="name_repas">Dessert : Glace / Salade de fruits</h5>
           </div>
         </div>
-        <button class="button">Se connecter</button>
+      </div>
+      <div class="new__card-client">
+        <p class="new__card-phrase-client">Bon appétit</p>
+        <img
+          src="../media/logos/QRcomlogo.png"
+          alt="logo QRcom"
+          class="img-card-client"
+        />
       </div>
     </div>
-
     <!--=============== SCROLL REVEAL ===============-->
-    <script src="./js/scrollreveal.min.js"></script>
+    <!-- <script src="./js/scrollreveal.min.js"></script>
 
-    <script src="./js/script.js" type="text/javascript"></script>
+    <script src="./js/script.js" type="text/javascript"></script> -->
   </body>
 </html>
