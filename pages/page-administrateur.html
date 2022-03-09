@@ -100,57 +100,74 @@
       </nav>
     </header>
 
-    <main>
-      <section class="top-modif-menu">
-        <h1 class="titre-page-menu">Création de mon menu</h1>
-        <div class="logo-restaurant">
-          <img
-            src="../media/basic-pics/restaurant1.jpg"
-            alt="logo ou nom du resturant"
-          />
+    <main class="main">
+      <div class="page-admin">
+        <div class="container-overlay">
+          <section class="top-modif-menu">
+            <div class="top-modif-background">
+              <button type="submit" class="btn-overlay">
+                <input
+                  class="items-card-menu"
+                  type="image"
+                  src="../media/svg/image-solid.svg"
+                  alt="imge background"
+                  name="Modifier mon background"
+                />
+              </button>
+              <h1 class="titre-page-menu">Création de mon menu</h1>
+            </div>
+            <div class="logo-restaurant">
+              <img
+                src="../media/basic-pics/restaurant1.jpg"
+                alt="logo ou nom du restaurant"
+              />
+            </div>
+            <div class="modif-titre-menu">
+              <h4>Texte par défault plat du jour</h4>
+            </div>
+            <div class="modif-date-menu">
+              <span>Date 01/01/2022</span>
+              <i class="bx bx-plus-circle"></i>
+            </div>
+          </section>
+          <section class="lignes-menu">
+            <div class="ajout-ligne">
+              <i class="bx bx-plus-circle"></i>
+              <button class="btn-new-line" type="submit">
+                Ajouter une nouvelle ligne
+              </button>
+            </div>
+            <form class="form-lignes-menu">
+              <ul>
+                <li class="form-designation-menu designation-menu">
+                  Désignation
+                </li>
+                <li class="designation-menu">Désignation</li>
+                <li class="designation-menu">Désignation</li>
+              </ul>
+              <ul>
+                <li class="form-designation-menu prix-menu">Prix en Euros</li>
+                <li class="prix-menu">Prix en Euros</li>
+                <li class="prix-menu">Prix en Euros</li>
+              </ul>
+            </form>
+          </section>
+          <section class="modif-bottom-menu">
+            <div class="comment">
+              <span>Commentaire par défaut : Bon appétit</span>
+            </div>
+            <div class="btn-send-menu">
+              <a
+                href="./page-client.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="button btn-menu-sent">Envoyer</button>
+              </a>
+            </div>
+          </section>
         </div>
-        <div class="modif-titre-menu">
-          <h4>Texte par défault plat du jour</h4>
-        </div>
-        <div class="modif-date-menu">
-          <span>Date 01/01/2022</span>
-          <i class="bx bx-plus-circle"></i>
-        </div>
-      </section>
-      <section class="lignes-menu">
-        <div class="ajout-ligne">
-          <i class="bx bx-plus-circle"></i>
-          <button class="btn-new-line" type="submit">
-            Ajouter une nouvelle ligne
-          </button>
-        </div>
-        <form class="form-lignes-menu">
-          <ul>
-            <li class="form-designation-menu designation-menu">Désignation</li>
-            <li class="designation-menu">Désignation</li>
-            <li class="designation-menu">Désignation</li>
-          </ul>
-          <ul>
-            <li class="form-designation-menu prix-menu">Prix en Euros</li>
-            <li class="prix-menu">Prix en Euros</li>
-            <li class="prix-menu">Prix en Euros</li>
-          </ul>
-        </form>
-      </section>
-      <section class="modif-bottom-menu">
-        <div class="comment">
-          <span>Commentaire par défaut : Bon appétit</span>
-        </div>
-        <div class="btn-send-menu">
-          <a
-            href="./page-client.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button class="button btn-menu-sent">Envoyer</button>
-          </a>
-        </div>
-      </section>
+      </div>
     </main>
 
     <!-- ===== IONICONS ===== -->
