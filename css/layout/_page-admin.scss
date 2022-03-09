@@ -4,9 +4,29 @@
   padding: 0;
 }
 // =================Section top-modif-menu=================//
-.top-modif-menu .titre-page-menu {
+.main {
+  margin-top: 100px;
+}
+.page-admin {
+  position: relative;
+  width: 350px;
+  height: 100%;
+  box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+  background: #fff;
+  padding: 12px;
+  border-radius: 4px;
   text-align: center;
-  margin: 80px 0 25px 0;
+  margin-bottom: 1.8rem;
+  overflow: hidden;
+}
+.top-modif-background {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.top-modif-menu .titre-page-menu {
+  font-size: 22px;
+  margin: 15px auto 15px;
 }
 
 .top-modif-menu .logo-restaurant {
@@ -19,8 +39,7 @@
   font-size: 16px;
   font-weight: 500;
   text-align: center;
-  background: #000;
-  color: #fff;
+  @include admin-border-menu;
   border-radius: 3px;
   padding: 2px 10px;
   width: 100%;
@@ -66,18 +85,14 @@
   margin-bottom: 15px;
 }
 .designation-menu {
-  background: #fff;
-  color: #000;
-  border: 1px solid #000;
+  @include admin-border-menu;
   padding: 5px 90px 5px 5px;
   border-radius: 3px;
   text-align: left;
-  width: 100%;
+  width: 500px;
 }
 .prix-menu {
-  background: #fff;
-  color: #000;
-  border: 1px solid #000;
+  @include admin-border-menu;
   padding: 7px 10px 5px 5px;
   border-radius: 3px;
   font-size: 12px;
@@ -106,4 +121,34 @@
   border-radius: 14px;
   //   outline: none;
   color: #000;
+}
+// Responsive style
+@media screen and (min-width: 602px) {
+  .page-admin {
+    position: relative;
+    width: 650px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 601px) {
+  .page-admin {
+    position: relative;
+    width: 550px;
+    height: 100%;
+  }
+  .designation-menu {
+    @include admin-border-menu;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 451px) {
+  .page-admin {
+    position: relative;
+    width: 350px;
+    height: 100%;
+  }
+  .designation-menu {
+    @include admin-border-menu;
+    width: 100%;
+  }
 }

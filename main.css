@@ -929,9 +929,39 @@ img {
   padding: 0;
 }
 
-.top-modif-menu .titre-page-menu {
+.main {
+  margin-top: 100px;
+}
+
+.page-admin {
+  position: relative;
+  width: 350px;
+  height: 100%;
+  -webkit-box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+          box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+  background: #fff;
+  padding: 12px;
+  border-radius: 4px;
   text-align: center;
-  margin: 80px 0 25px 0;
+  margin-bottom: 1.8rem;
+  overflow: hidden;
+}
+
+.top-modif-background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-modif-menu .titre-page-menu {
+  font-size: 22px;
+  margin: 15px auto 15px;
 }
 
 .top-modif-menu .logo-restaurant {
@@ -945,8 +975,9 @@ img {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
   border-radius: 3px;
   padding: 2px 10px;
   width: 100%;
@@ -1020,7 +1051,7 @@ img {
   padding: 5px 90px 5px 5px;
   border-radius: 3px;
   text-align: left;
-  width: 100%;
+  width: 500px;
 }
 
 .prix-menu {
@@ -1061,6 +1092,42 @@ img {
   background: #fff;
   border-radius: 14px;
   color: #000;
+}
+
+@media screen and (min-width: 602px) {
+  .page-admin {
+    position: relative;
+    width: 650px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .page-admin {
+    position: relative;
+    width: 550px;
+    height: 100%;
+  }
+  .designation-menu {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .page-admin {
+    position: relative;
+    width: 350px;
+    height: 100%;
+  }
+  .designation-menu {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    width: 100%;
+  }
 }
 
 /*===== GOOGLE FONTS =====*/

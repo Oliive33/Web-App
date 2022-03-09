@@ -15,6 +15,7 @@
   src: url("./fonts/MFReallyAwesome.ttf") format("truetype");
 }
 
+@import "./css/utils/mixins";
 @import "./css/layout/index";
 @import "./css/layout/page-menu";
 @import "./css/layout/page-admin";
