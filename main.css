@@ -60,7 +60,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -10000;
-  background: url(https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80);
+  background: url("./media/basic-pics/restaurant1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -285,12 +285,12 @@ body {
     font-size: 12px;
   }
   button {
-    margin: 30px 0 0 20px;
+    margin: 30px 0 0 10px;
     padding: 10px 5px;
     font-size: 13px;
   }
   .btn-connection {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
@@ -494,6 +494,7 @@ img {
 .nav .btn-deconec {
   color: white;
   margin: 0;
+  padding: 5px 5px;
 }
 
 /*Aparecer menu*/
@@ -589,7 +590,7 @@ img {
 }
 
 .page-menu {
-  margin: 100px auto 5px;
+  margin: 75px auto 5px;
 }
 
 .new__card {
@@ -619,7 +620,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 50px;
+  padding-top: 5px;
   margin-bottom: 20px;
   font-family: var(--date-font);
 }
@@ -846,6 +847,10 @@ img {
   .container-swiper {
     max-width: 700px;
   }
+  .new__card-date {
+    padding-top: 10px;
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -885,10 +890,11 @@ img {
     position: relative;
     width: 335px;
     padding: 5px;
+    margin-top: 4rem;
     margin-bottom: 1rem;
   }
   .new__card-date {
-    padding-top: 40px;
+    padding-top: 30px;
     margin-bottom: 15px;
   }
   .name_repas {
@@ -915,6 +921,9 @@ img {
 @media screen and (max-width: 475px) {
   .repas {
     padding: 0.8px;
+  }
+  .new__card {
+    margin-top: 1rem;
   }
   .new__card-date {
     padding-top: 10px;
@@ -1166,10 +1175,40 @@ img {
 }
 
 .page-client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 20px auto 50px;
 }
 
-.container-client {
+.container-client-default {
+  position: relative;
+  width: 350px;
+  height: 100%;
+  -webkit-box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+          box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2px;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container-client-default,
+.container-client-parchemin,
+.container-client-ardoise {
+  margin: 5px;
+}
+
+.container-client-parchemin {
   position: relative;
   width: 350px;
   height: 100%;
@@ -1182,7 +1221,6 @@ img {
   padding: 2px;
   border-radius: 4px;
   text-align: center;
-  margin-bottom: 1.8rem;
   overflow: hidden;
 }
 
@@ -1311,6 +1349,18 @@ img {
   height: 50px;
 }
 
+@media screen and (max-width: 1180px) {
+  .page-client {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .top-modif-menu .titre-page-menu {
     margin: 15px 0 20px 0;
@@ -1321,8 +1371,34 @@ img {
 }
 
 @media screen and (max-width: 400px) {
-  .container-client {
+  .container-client-parchemin,
+  .container-client-default,
+  .container-client-ardoise {
     width: 339px;
   }
+}
+
+.container-client-ardoise {
+  position: relative;
+  width: 350px;
+  height: 100%;
+  -webkit-box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+          box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+  background-image: url(./media/basic-pics/ardoise.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2px;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+.img-ardoise {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: none;
 }
 /*# sourceMappingURL=main.css.map */

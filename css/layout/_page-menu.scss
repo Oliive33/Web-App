@@ -163,6 +163,7 @@ img {
   .btn-deconec {
     color: white;
     margin: 0;
+    padding: 5px 5px;
   }
 }
 /*Aparecer menu*/
@@ -251,7 +252,7 @@ img {
 }
 // main
 .page-menu {
-  margin: 100px auto 5px;
+  margin: 75px auto 5px;
 }
 
 .new__card {
@@ -274,7 +275,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 5px;
   margin-bottom: 20px;
   font-family: var(--date-font);
 }
@@ -444,6 +445,10 @@ img {
   .container-swiper {
     max-width: 700px;
   }
+  .new__card-date {
+    padding-top: 10px;
+    margin-bottom: 15px;
+  }
 }
 @media screen and (max-width: 768px) {
   .page-menu {
@@ -483,10 +488,11 @@ img {
     width: 335px;
     // height: 450px;
     padding: 5px;
+    margin-top: 4rem;
     margin-bottom: 1rem;
   }
   .new__card-date {
-    padding-top: 40px;
+    padding-top: 30px;
     margin-bottom: 15px;
   }
   .name_repas {
@@ -516,6 +522,9 @@ img {
 @media screen and (max-width: 475px) {
   .repas {
     padding: 0.8px;
+  }
+  .new__card {
+    margin-top: 1rem;
   }
   .new__card-date {
     padding-top: 10px;
