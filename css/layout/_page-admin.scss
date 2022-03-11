@@ -1,3 +1,9 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -71,8 +77,6 @@
   color: red;
 }
 .form-lignes-menu {
-  //   display: grid;
-  //   grid-template-columns: 1.5fr 0.8fr;
   display: flex;
   justify-content: space-between;
   align-items: center;

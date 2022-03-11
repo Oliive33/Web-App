@@ -3,33 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-/*===== VARIABLES CSS =====*/
-
-:root {
-  /*===== Colors =====*/
-  --first-color: rgba(253, 7, 7, 0.973);
-  --dark-color: #070d1f;
-  --dark-color-alt: #282b3a;
-  --white-color: #e6e7e9;
-
-  /*===== fonts & typos =====*/
-  --body-font: "Poppins", sans-serif;
-  --title-font: "Hammersmith One", sans-serif;
-  --date-font: "Hammersmith One", sans-serif;
-  --phrase-bottom-font: "Hammersmith One", sans-serif;
-  --menu-font: "Handlee", cursive;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-
-  /*===== z index =====*/
-  --z-fixed: 100;
-}
-:root {
-  @media screen and (min-width: 768px) {
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-  }
-}
 
 /*===== BASE =====*/
 * {
@@ -82,12 +55,12 @@
   margin: 40px 0 10px 0;
 }
 .items-card-client h3 {
-  font-family: var(--title-font);
+  font-family: $title-font;
   letter-spacing: 1px;
   margin: 52px 0px 15px 0;
 }
 .items-card-client .items-card-datejour {
-  font-family: var(--date-font);
+  font-family: $date-font;
   font-size: 14px;
   font-weight: 300;
 }
@@ -103,23 +76,19 @@
   font-weight: 600;
   margin-bottom: 5px;
   font-size: 16px;
-  //   font-family: "Courgette", cursive;
-  //   font-family: "Shadows Into Light", cursive;
-  font-family: var(--menu-font);
-  //   font-family: "Short Stack", cursive;
+  font-family: $menu-font;
 }
 .name_repas {
   font-size: 13px;
   margin: 7px 0 7px 0;
   font-weight: bolder;
-  //   font-family: "Courgette", cursive;
-  font-family: var(--menu-font);
+  font-family: $menu-font;
 }
 .name_repas-soustitre-client {
   font-size: 10px;
   font-weight: 400;
   margin-top: -5px;
-  font-family: "Poppins", sans-serif;
+  font-family: $body-font;
 }
 .text_repas {
   display: flex;
@@ -138,7 +107,7 @@
   padding-left: 0.5rem;
   font-size: 14px;
   letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+  font-family: $body-font;
   color: red;
   font-weight: bold;
 }
@@ -151,7 +120,7 @@
   margin-bottom: 5px;
 }
 .new__card-client .new__card-phrase-client {
-  font-family: var(--phrase-bottom-font);
+  font-family: $phrase-bottom-font;
   font-size: 17px;
   font-weight: bold;
   letter-spacing: 1px;

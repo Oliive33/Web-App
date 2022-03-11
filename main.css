@@ -1,28 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+/*===== Colors =====*/
+/*===== fonts & typos =====*/
+/*===== sizes fonts =====*/
+/*===== z index =====*/
+/*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-@font-face {
-  font-family: "Noto Sans";
-  src: url("./fonts/NotoSans-Italic.ttf") format("truetype");
-  src: url("./fonts/NotoSans-Regular.ttf") format("truetype");
-  src: url("./fonts/NotoSans-BoldItalic.ttf") format("truetype");
-  src: url("./fonts/NotoSans-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Gotham";
-  src: url("./fonts/Gotham-medium.ttf") format("truetype");
-  src: url("./fonts/Gotham-bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Mf really awesome";
-  src: url("./fonts/MFReallyAwesome.ttf") format("truetype");
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,12 +26,8 @@
   padding: 0;
 }
 
-:root {
-  --primary-color: rgba(253, 7, 7, 0.973);
-}
-
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,7 +120,7 @@ body {
 
 .form-control input:focus,
 .form-control input:valid {
-  border-bottom-color: var(--primary-color);
+  border-bottom-color: rgba(253, 7, 7, 0.973);
 }
 
 .form-control label {
@@ -141,7 +133,7 @@ body {
 
 .form-control input:focus + label,
 .form-control input:valid + label {
-  color: var(--primary-color);
+  color: var rgba(253, 7, 7, 0.973);
   -webkit-transform: translateY(-22px);
           transform: translateY(-22px);
   font-size: 14px;
@@ -261,7 +253,7 @@ body {
     margin: 90px auto 0;
   }
   .container h1 img {
-    width: 45px;
+    width: 55px;
     height: 45px;
   }
   .head-container p {
@@ -277,6 +269,9 @@ body {
   .form-control label {
     font-size: 14px;
   }
+  .remember-button .input-check {
+    margin: 15px 0 0 0;
+  }
   .remember-button .input-check .checkbox {
     width: 20px;
     height: 20px;
@@ -290,7 +285,14 @@ body {
     font-size: 13px;
   }
   .btn-connection {
+    margin: 20px 0 0;
     font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btn-connection {
+    padding: 8px 15px;
   }
 }
 
@@ -304,33 +306,6 @@ body {
 }
 
 /*===== GOOGLE FONTS =====*/
-/*===== VARIABLES CSS =====*/
-:root {
-  --header-height: 4rem;
-  /*===== Colors =====*/
-  --first-color: rgba(253, 7, 7, 0.973);
-  --dark-color: #070d1f;
-  --dark-color-alt: #282b3a;
-  --white-color: #e6e7e9;
-  /*===== fonts & typos =====*/
-  --body-font: "Poppins", sans-serif;
-  --title-font: "Hammersmith One", sans-serif;
-  --date-font: "Hammersmith One", sans-serif;
-  --phrase-bottom-font: "Hammersmith One", sans-serif;
-  --menu-font: "Handlee", cursive;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-  /*===== z index =====*/
-  --z-fixed: 100;
-}
-
-@media screen and (min-width: 768px) {
-  :root {
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-  }
-}
-
 /*===== BASE =====*/
 * {
   -webkit-box-sizing: border-box;
@@ -341,8 +316,8 @@ body {
 
 body {
   min-height: 100vh;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -378,8 +353,8 @@ img {
   top: 0;
   left: 0;
   padding: 6px 1.5rem;
-  background-color: var(--dark-color);
-  z-index: var(--z-fixed);
+  background-color: #070d1f;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,12 +367,12 @@ img {
 }
 
 .header__logo {
-  color: var(--white-color);
+  color: #e6e7e9;
 }
 
 .header__toggle {
   font-size: 1.5rem;
-  color: var(--white-color);
+  color: #e6e7e9;
   cursor: pointer;
 }
 
@@ -407,12 +382,12 @@ img {
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: var(--dark-color);
-    color: var(--white-color);
+    background-color: #070d1f;
+    color: #e6e7e9;
     width: 100%;
     height: 100vh;
     padding: 1.5rem 0;
-    z-index: var(--z-fixed);
+    z-index: 100;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
@@ -431,7 +406,7 @@ img {
   right: 1.5rem;
   font-size: 1.3rem;
   padding: 0.25rem;
-  background-color: var(--dark-color-alt);
+  background-color: #282b3a;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -456,11 +431,11 @@ img {
 
 .nav__name {
   display: block;
-  color: var(--white-color);
+  color: #e6e7e9;
 }
 
 .nav__profesion {
-  font-size: var(--small-font-size);
+  font-size: 0.875rem;
 }
 
 .nav__menu {
@@ -474,7 +449,8 @@ img {
 }
 
 .nav__link {
-  color: var(--white-color);
+  color: #e6e7e9;
+  margin-left: 0;
 }
 
 .nav__deconnexcion {
@@ -483,12 +459,12 @@ img {
 
 .nav__deconnexcion-icon {
   font-size: 1.2rem;
-  color: var(--white-color);
+  color: #e6e7e9;
   margin-right: 1rem;
 }
 
 .nav__deconnexcion-icon:hover {
-  color: var(--first-color);
+  color: rgba(253, 7, 7, 0.973);
 }
 
 .nav .btn-deconec {
@@ -504,7 +480,7 @@ img {
 
 /*Active menu*/
 .active {
-  color: var(--first-color);
+  color: rgba(253, 7, 7, 0.973);
 }
 
 /*===== MEDIA QUERIES =====*/
@@ -562,15 +538,16 @@ img {
     margin: 0 0.25rem;
   }
   .nav__link {
-    padding: 0.5rem 0.8rem;
+    padding: 0.5rem 3.8rem;
     border-radius: 0.25rem;
+    margin-left: 80px;
   }
   .nav__link:hover {
-    background-color: var(--first-color);
+    background-color: rgba(253, 7, 7, 0.973);
   }
   .active {
-    background-color: var(--first-color);
-    color: var(--white-color);
+    background-color: rgba(253, 7, 7, 0.973);
+    color: #e6e7e9;
   }
 }
 
@@ -622,7 +599,7 @@ img {
           flex-direction: column;
   padding-top: 5px;
   margin-bottom: 20px;
-  font-family: var(--date-font);
+  font-family: "Hammersmith One", sans-serif;
 }
 
 .new__card-date .new__card-phrase {
@@ -719,11 +696,11 @@ img {
 }
 
 .items-card .items-card-tittle {
-  font-family: var(--title-font);
+  font-family: "Hammersmith One", sans-serif;
 }
 
 .items-card .items-card-datejour {
-  font-family: var(--date-font);
+  font-family: "Hammersmith One", sans-serif;
   font-size: 14px;
 }
 
@@ -742,7 +719,7 @@ img {
 
 .repas .title_repas {
   text-align: left;
-  font-family: --menu-font;
+  font-family: "Handlee", cursive;
   font-style: italic;
   font-weight: bold;
   margin-bottom: 5px;
@@ -759,7 +736,7 @@ img {
   font-size: 12px;
   margin: 7px 0 7px 0;
   font-weight: bolder;
-  font-family: var(--menu-font);
+  font-family: "Handlee", cursive;
 }
 
 .text_repas {
@@ -818,18 +795,6 @@ img {
 }
 
 /*Class Swiper*/
-.swiper-pagination {
-  margin-bottom: 15px;
-}
-
-.swiper-pagination-bullet {
-  background: red;
-}
-
-.swiper-pagination-bullet-active {
-  background: black;
-}
-
 .swiper-button-next,
 .swiper-button-prev {
   height: 4.9rem;
@@ -931,6 +896,7 @@ img {
   }
 }
 
+/*===== GOOGLE FONTS =====*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1140,32 +1106,6 @@ img {
 }
 
 /*===== GOOGLE FONTS =====*/
-/*===== VARIABLES CSS =====*/
-:root {
-  /*===== Colors =====*/
-  --first-color: rgba(253, 7, 7, 0.973);
-  --dark-color: #070d1f;
-  --dark-color-alt: #282b3a;
-  --white-color: #e6e7e9;
-  /*===== fonts & typos =====*/
-  --body-font: "Poppins", sans-serif;
-  --title-font: "Hammersmith One", sans-serif;
-  --date-font: "Hammersmith One", sans-serif;
-  --phrase-bottom-font: "Hammersmith One", sans-serif;
-  --menu-font: "Handlee", cursive;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-  /*===== z index =====*/
-  --z-fixed: 100;
-}
-
-@media screen and (min-width: 768px) {
-  :root {
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-  }
-}
-
 /*===== BASE =====*/
 * {
   -webkit-box-sizing: border-box;
@@ -1229,13 +1169,13 @@ img {
 }
 
 .items-card-client h3 {
-  font-family: var(--title-font);
+  font-family: "Hammersmith One", sans-serif;
   letter-spacing: 1px;
   margin: 52px 0px 15px 0;
 }
 
 .items-card-client .items-card-datejour {
-  font-family: var(--date-font);
+  font-family: "Hammersmith One", sans-serif;
   font-size: 14px;
   font-weight: 300;
 }
@@ -1258,14 +1198,14 @@ img {
   font-weight: 600;
   margin-bottom: 5px;
   font-size: 16px;
-  font-family: var(--menu-font);
+  font-family: "Handlee", cursive;
 }
 
 .name_repas {
   font-size: 13px;
   margin: 7px 0 7px 0;
   font-weight: bolder;
-  font-family: var(--menu-font);
+  font-family: "Handlee", cursive;
 }
 
 .name_repas-soustitre-client {
@@ -1337,7 +1277,7 @@ img {
 }
 
 .new__card-client .new__card-phrase-client {
-  font-family: var(--phrase-bottom-font);
+  font-family: "Hammersmith One", sans-serif;
   font-size: 17px;
   font-weight: bold;
   letter-spacing: 1px;

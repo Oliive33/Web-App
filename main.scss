@@ -1,20 +1,4 @@
-@font-face {
-  font-family: "Noto Sans";
-  src: url("./fonts/NotoSans-Italic.ttf") format("truetype");
-  src: url("./fonts/NotoSans-Regular.ttf") format("truetype");
-  src: url("./fonts/NotoSans-BoldItalic.ttf") format("truetype");
-  src: url("./fonts/NotoSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Gotham";
-  src: url("./fonts/Gotham-medium.ttf") format("truetype");
-  src: url("./fonts/Gotham-bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Mf really awesome";
-  src: url("./fonts/MFReallyAwesome.ttf") format("truetype");
-}
-
+@import "./css/utils/variables";
 @import "./css/utils/mixins";
 @import "./css/layout/index";
 @import "./css/layout/page-menu";
