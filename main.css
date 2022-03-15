@@ -905,15 +905,15 @@ img {
 }
 
 .main {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .page-admin {
   position: relative;
   width: 350px;
   height: 100%;
-  -webkit-box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
-          box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+  -webkit-box-shadow: 1px 3px 6px 3px rgba(171, 171, 171, 0.75);
+          box-shadow: 1px 3px 6px 3px rgba(171, 171, 171, 0.75);
   background: #fff;
   padding: 12px;
   border-radius: 4px;
@@ -956,6 +956,7 @@ img {
   border-radius: 3px;
   padding: 2px 10px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .modif-date-menu {
@@ -1023,10 +1024,25 @@ img {
   background: #fff;
   color: #000;
   border: 1px solid #000;
-  padding: 5px 90px 5px 5px;
+  padding: 5px 120px 5px 5px;
   border-radius: 3px;
   text-align: left;
   width: 500px;
+}
+
+.descriptif-plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -10px !important;
+}
+
+.descriptif-plat .link-designation-menu {
+  font-size: 11px;
+  color: rgba(253, 7, 7, 0.973);
 }
 
 .prix-menu {
@@ -1037,6 +1053,7 @@ img {
   border-radius: 3px;
   font-size: 12px;
   margin-left: 5px;
+  margin-bottom: 35px !important;
 }
 
 .comment {
@@ -1046,6 +1063,8 @@ img {
   font-size: 14px;
   border-radius: 4px;
   border: 1px solid red;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .btn-send-menu {
@@ -1069,19 +1088,17 @@ img {
   color: #000;
 }
 
-@media screen and (min-width: 602px) {
+@media screen and (min-width: 802px) {
   .page-admin {
     position: relative;
-    width: 650px;
-    height: 100%;
+    width: 800px;
   }
 }
 
-@media screen and (max-width: 601px) {
+@media screen and (max-width: 801px) {
   .page-admin {
     position: relative;
     width: 550px;
-    height: 100%;
   }
   .designation-menu {
     background: #fff;
@@ -1095,13 +1112,35 @@ img {
   .page-admin {
     position: relative;
     width: 350px;
-    height: 100%;
   }
   .designation-menu {
     background: #fff;
     color: #000;
     border: 1px solid #000;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .page-admin {
+    position: relative;
+    width: 340px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .page-admin {
+    position: relative;
+    width: 315px;
+  }
+  .designation-menu {
+    padding: 5px 100px 5px 5px;
+  }
+  .prix-menu {
+    padding: 5px 5px 5px 5px;
+    font-size: 10px;
+    margin-bottom: 38px !important;
   }
 }
 
