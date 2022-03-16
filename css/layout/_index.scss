@@ -49,14 +49,14 @@ body {
 
 .container {
   background: white;
-  backdrop-filter: brightness(0.5);
+  height: auto;
   opacity: 0.8;
   border: 1px solid #333;
   padding: 2rem;
   border-radius: 6px;
   box-shadow: 0 0 3px #333;
   margin-top: 140px;
-  height: auto;
+  backdrop-filter: brightness(0.5);
 }
 .container h1 img {
   width: 50px;

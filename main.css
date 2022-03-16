@@ -76,8 +76,7 @@ body {
 
 .container {
   background: white;
-  -webkit-backdrop-filter: brightness(0.5);
-          backdrop-filter: brightness(0.5);
+  height: auto;
   opacity: 0.8;
   border: 1px solid #333;
   padding: 2rem;
@@ -85,7 +84,8 @@ body {
   -webkit-box-shadow: 0 0 3px #333;
           box-shadow: 0 0 3px #333;
   margin-top: 140px;
-  height: auto;
+  -webkit-backdrop-filter: brightness(0.5);
+          backdrop-filter: brightness(0.5);
 }
 
 .container h1 img {
@@ -915,10 +915,6 @@ body {
 }
 
 .container-administrateur {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
   width: 100%;
   height: auto;
   background-image: url(./media/basic-pics/back-admin.jpg);
@@ -926,14 +922,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: -10000;
-  opacity: 0.9;
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
+  opacity: 0.8;
 }
 
 .main {
-  margin-top: 180px;
+  margin-top: 100px;
   margin-bottom: 55px;
 }
 
@@ -958,6 +951,9 @@ body {
   border-radius: 4px;
   text-align: center;
   margin-bottom: 1.8rem;
+  opacity: 1 !important;
+  -webkit-backdrop-filter: brightness(0.5);
+          backdrop-filter: brightness(0.5);
   margin: 0 auto;
   overflow: hidden;
   z-index: 1000;
