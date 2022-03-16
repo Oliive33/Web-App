@@ -16,7 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  // min-height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 .container-body::before {
@@ -43,13 +43,14 @@ body {
   box-shadow: -1px 8px 21px -6px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
 }
-.container-global {
+// .container-global {
+
+// }
+
+.container {
   background: white;
   backdrop-filter: brightness(0.5);
   opacity: 0.8;
-}
-
-.container {
   border: 1px solid #333;
   padding: 2rem;
   border-radius: 6px;
