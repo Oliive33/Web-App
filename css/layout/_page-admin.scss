@@ -5,25 +5,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+// body {
+//   min-height: 100vh;
+// }
 // =================Section top-modif-menu=================//
+// .container-administrateur {
+//   margin-top: 120px;
+// }
+.container-administrateur {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // bottom: 0;
+  width: 100%;
+  height: auto;
+  background-image: url(../media/basic-pics/back-admin.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  opacity: 0.9;
+  // backdrop-filter: blur(1px);
+  // backdrop-filter: opacity(85%);
+  // margin: 100px auto;
+}
 .main {
   margin-top: 90px;
+  margin-bottom: 55px;
+}
+.backup {
+  position: absolute;
+  left: 30px;
+}
+.back-arrow {
+  width: 20px;
+  height: 20px;
 }
 .page-admin {
-  position: relative;
+  position: absolute;
   width: 350px;
   height: 100%;
-  box-shadow: 1px 3px 6px 3px rgba(171, 171, 171, 0.75);
+  box-shadow: 1px 2px 3px 1px rgba(171, 171, 171, 0.75);
   background: #fff;
   padding: 12px;
   border-radius: 4px;
   text-align: center;
   margin-bottom: 1.8rem;
+  opacity: 1 !important;
+  backdrop-filter: brightness(0.5);
+  margin: 0 auto;
   overflow: hidden;
+  z-index: 1000;
 }
 .top-modif-background {
   display: flex;
@@ -147,13 +184,24 @@
   }
 }
 @media screen and (max-width: 801px) {
+  .backup {
+    position: absolute;
+    top: 17%;
+    left: 4px;
+  }
   .page-admin {
     position: relative;
-    width: 550px;
+    width: 490px;
   }
   .designation-menu {
     @include admin-border-menu;
     width: 300px;
+  }
+}
+@media screen and (max-width: 601px) {
+  .page-admin {
+    position: relative;
+    width: 400px;
   }
 }
 @media screen and (max-width: 451px) {

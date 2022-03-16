@@ -75,12 +75,16 @@
 
           <div class="nav__perfil">
             <div class="nav__img">
-              <a href="./page-menu.html">
-                <img
-                  src="../media/logos/QRcomlogo-300.jpg"
-                  alt="logo web app"
-                />
-              </a>
+              <div class="backup">
+                <a href="./page-menu.html">
+                  <img
+                    class="back-arrow"
+                    src="../media/svg/arrow-left-solid.svg"
+                    alt="arrow left"
+                  />
+                </a>
+              </div>
+              <img src="../media/logos/QRcomlogo-300.jpg" alt="logo web app" />
             </div>
           </div>
 
@@ -98,96 +102,96 @@
         </div>
       </nav>
     </header>
-
-    <main class="main">
-      <div class="page-admin">
-        <div class="container-overlay">
-          <section class="top-modif-menu">
-            <div class="top-modif-background">
-              <button type="submit" class="btn-overlay">
-                <input
-                  class="items-card-menu"
-                  type="image"
-                  src="../media/svg/image-solid.svg"
-                  alt="imge background"
-                  name="Modifier mon background"
-                />
-                <!-- <img src="../media/basic-pics/parchemin.jpg" alt="img background">
+    <div class="container-administrateur">
+      <main class="main">
+        <div class="page-admin">
+          <div class="container-overlay">
+            <section class="top-modif-menu">
+              <div class="top-modif-background">
+                <button type="submit" class="btn-overlay">
+                  <input
+                    class="items-card-menu"
+                    type="image"
+                    src="../media/svg/image-solid.svg"
+                    alt="imge background"
+                    name="Modifier mon background"
+                  />
+                  <!-- <img src="../media/basic-pics/parchemin.jpg" alt="img background">
                 <img src="../media/basic-pics/ardoise.jpg" alt="img background"> -->
-              </button>
-            </div>
-            <div class="logo-restaurant">
-              <img
-                src="../media/basic-pics/restaurant1.jpg"
-                alt="logo ou nom du restaurant"
-              />
-            </div>
-            <div class="modif-titre-menu">
-              <h4>Plat du jour</h4>
-            </div>
-            <div class="modif-date-menu">
-              <span>Date 01/01/2022</span>
-              <i class="bx bx-plus-circle"></i>
-            </div>
-          </section>
-          <section class="lignes-menu">
-            <div class="ajout-ligne">
-              <i class="bx bx-plus-circle"></i>
-              <button class="btn-new-line" type="submit">
-                Ajouter une nouvelle ligne
-              </button>
-            </div>
-            <form class="form-lignes-menu">
-              <ul>
-                <li class="form-designation-menu designation-menu">
-                  Désignation
-                </li>
-                <li class="descriptif-plat">
-                  <i class="bx bx-plus-circle"></i>
-                  <a class="link-designation-menu" href="#">
-                    Descriptif du plat
-                  </a>
-                </li>
-                <li class="designation-menu">Désignation</li>
-                <li class="descriptif-plat">
-                  <i class="bx bx-plus-circle"></i>
-                  <a class="link-designation-menu" href="#">
-                    Descriptif du plat
-                  </a>
-                </li>
-                <li class="designation-menu">Désignation</li>
-                <li class="descriptif-plat">
-                  <i class="bx bx-plus-circle"></i>
-                  <a class="link-designation-menu" href="#">
-                    Descriptif du plat
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li class="form-designation-menu prix-menu">Prix en Euros</li>
-                <li class="prix-menu">Prix en Euros</li>
-                <li class="prix-menu">Prix en Euros</li>
-              </ul>
-            </form>
-          </section>
-          <section class="modif-bottom-menu">
-            <div class="comment">
-              <span>Bon appétit</span>
-            </div>
-            <div class="btn-send-menu">
-              <a
-                href="./page-client.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button class="button btn-menu-sent">Envoyer</button>
-              </a>
-            </div>
-          </section>
+                </button>
+              </div>
+              <div class="logo-restaurant">
+                <img
+                  src="../media/basic-pics/restaurant1.jpg"
+                  alt="logo ou nom du restaurant"
+                />
+              </div>
+              <div class="modif-titre-menu">
+                <h4>Plat du jour</h4>
+              </div>
+              <div class="modif-date-menu">
+                <span>Date 01/01/2022</span>
+                <i class="bx bx-plus-circle"></i>
+              </div>
+            </section>
+            <section class="lignes-menu">
+              <div class="ajout-ligne">
+                <i class="bx bx-plus-circle"></i>
+                <button class="btn-new-line" type="submit">
+                  Ajouter une nouvelle ligne
+                </button>
+              </div>
+              <form class="form-lignes-menu">
+                <ul>
+                  <li class="form-designation-menu designation-menu">
+                    Désignation
+                  </li>
+                  <li class="descriptif-plat">
+                    <i class="bx bx-plus-circle"></i>
+                    <a class="link-designation-menu" href="#">
+                      Descriptif du plat
+                    </a>
+                  </li>
+                  <li class="designation-menu">Désignation</li>
+                  <li class="descriptif-plat">
+                    <i class="bx bx-plus-circle"></i>
+                    <a class="link-designation-menu" href="#">
+                      Descriptif du plat
+                    </a>
+                  </li>
+                  <li class="designation-menu">Désignation</li>
+                  <li class="descriptif-plat">
+                    <i class="bx bx-plus-circle"></i>
+                    <a class="link-designation-menu" href="#">
+                      Descriptif du plat
+                    </a>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="form-designation-menu prix-menu">Prix en Euros</li>
+                  <li class="prix-menu">Prix en Euros</li>
+                  <li class="prix-menu">Prix en Euros</li>
+                </ul>
+              </form>
+            </section>
+            <section class="modif-bottom-menu">
+              <div class="comment">
+                <span>Bon appétit</span>
+              </div>
+              <div class="btn-send-menu">
+                <a
+                  href="./page-client.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="button btn-menu-sent">Envoyer</button>
+                </a>
+              </div>
+            </section>
+          </div>
         </div>
-      </div>
-    </main>
-
+      </main>
+    </div>
     <!-- ===== IONICONS ===== -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
