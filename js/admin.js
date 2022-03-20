@@ -27,3 +27,39 @@ BackgroundBtn.addEventListener("click", () => {
 formBackgroundClose.addEventListener("click", () => {
   loginBackground.classList.remove("active");
 });
+//====================
+// Modif logo
+
+const imgDiv = document.querySelector(".profile-pic-div");
+const img = document.querySelector("#photo");
+const file = document.querySelector("#file");
+const uploadBtn = document.querySelector("#uploadBtn");
+
+//Quand on passe au hover
+
+imgDiv.addEventListener("mouseenter", function () {
+  uploadBtn.style.display = "block";
+});
+
+//Quand on passe au hover
+
+imgDiv.addEventListener("mouseleave", function () {
+  uploadBtn.style.display = "none";
+});
+
+//Quand on choissit une photo to upload
+
+file.addEventListener("change", function () {
+  //this refers to file
+  const choosedFile = this.files[0];
+
+  if (choosedFile) {
+    const reader = new FileReader();
+
+    reader.addEventListener("load", function () {
+      img.setAttribute("src", reader.result);
+    });
+
+    reader.readAsDataURL(choosedFile);
+  }
+});

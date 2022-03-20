@@ -102,7 +102,7 @@ body {
 
 .login-background-container {
   position: fixed;
-  top: -100%;
+  top: -200%;
   left: 0;
   z-index: 10000;
   min-height: 100vh;
@@ -181,17 +181,51 @@ body {
   color: #fff;
   cursor: pointer;
 }
-// ==========================
+// ==================Main logo=================//
 .top-modif-menu .titre-page-menu {
   font-size: 22px;
   margin: 15px auto 15px;
 }
+.logo-restaurant {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 0;
+}
+// =========modif logo================//
+.profile-pic-div {
+  height: 100px;
+  width: 100px;
+  transform: translate(-5%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid grey;
+}
 
-.top-modif-menu .logo-restaurant {
-  width: 80px;
-  height: 80px;
-  border: 10px;
-  margin: 0 auto;
+#photo {
+  height: 100%;
+  width: 100%;
+}
+
+#file {
+  display: none;
+}
+
+#uploadBtn {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgb(0, 0, 0);
+  color: $first-color;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
 }
 .modif-titre-menu h4 {
   font-size: 16px;
@@ -216,6 +250,7 @@ body {
 .modif-date-menu .input-date {
   border: none;
   outline: none;
+  background: transparent !important;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -376,6 +411,9 @@ body {
   .page-admin {
     position: relative;
     width: 350px;
+  }
+  .login-background-container {
+    top: -100%;
   }
   .designation-menu {
     @include admin-border-menu;
