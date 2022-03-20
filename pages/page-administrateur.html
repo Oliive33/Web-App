@@ -108,17 +108,39 @@
           <div class="container-overlay">
             <section class="top-modif-menu">
               <div class="top-modif-background">
-                <button type="submit" class="btn-overlay">
+                <button type="submit" class="btn-overlay" id="background-btn">
                   <input
                     class="items-card-menu"
                     type="image"
                     src="../media/svg/image-solid.svg"
                     alt="imge background"
-                    name="Modifier mon background"
                   />
-                  <!-- <img src="../media/basic-pics/parchemin.jpg" alt="img background">
-                <img src="../media/basic-pics/ardoise.jpg" alt="img background"> -->
                 </button>
+              </div>
+              <!-- login-background  -->
+              <div class="login-background-container">
+                <i class="fas fa-times" id="form-background-close"></i>
+                <form class="form-background">
+                  <h3>Personnaliser le background du menu</h3>
+                  <div class="choix-back">
+                    <div class="background background-default"></div>
+                    <img
+                      src="../media/basic-pics/parchemin.jpg"
+                      alt="img background"
+                      class="background"
+                    />
+                    <img
+                      src="../media/basic-pics/ardoise.jpg"
+                      alt="img background"
+                      class="background"
+                    />
+                  </div>
+                  <div class="btn-form">
+                    <button type="submit" class="btn-background">
+                      Enregistrer
+                    </button>
+                  </div>
+                </form>
               </div>
               <div class="logo-restaurant">
                 <img
@@ -130,8 +152,10 @@
                 <h4>Plat du jour</h4>
               </div>
               <div class="modif-date-menu">
-                <span>Date 01/01/2022</span>
-                <i class="bx bx-plus-circle"></i>
+                <label for="date">Date </label>
+                <input id="start_date" class="input-date" type="date" />
+                <!-- <span>01/01/2022</span>
+                <i class="bx bx-plus-circle"></i> -->
               </div>
             </section>
             <section class="lignes-menu">
@@ -197,6 +221,8 @@
 
     <!-- =============== SCROLL REVEAL ===============-->
     <script src="../js/scrollreveal.min.js"></script>
+
+    <script src="../js/admin.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

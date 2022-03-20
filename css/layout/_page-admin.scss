@@ -67,6 +67,121 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
+// ====================Popup background start======================//
+
+.background-btn {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 4.8rem;
+  margin-bottom: 1rem;
+}
+
+.btn-form {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-background {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: rgb(19, 19, 19);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+.btn-background:hover {
+  background: $first-color;
+}
+
+.login-background-container {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-background-container.active {
+  top: 0;
+}
+
+.login-background-container .form-background {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 38rem;
+  height: 22rem;
+}
+.login-background-container .form-background .choix-back {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #7e7e7e;
+  padding: 5px 2px;
+  border-radius: 5px;
+}
+.login-background-container .form-background .choix-back .background {
+  width: 150px;
+  margin: 7px;
+  transition: all 0.2s ease-in-out;
+}
+.login-background-container .form-background .choix-back .background:hover {
+  border: 2px solid $first-color;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.background-default {
+  background: white;
+  padding: 90px 73.41px;
+  margin: 7px;
+}
+.login-background-container .form-background h3 {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+// .login-background-container .form-background .box {
+//   width: 100%;
+//   padding: 10px;
+//   font-size: 16px;
+//   font-family: "Poppins", sans-serif;
+//   color: #333;
+//   margin: 0.6rem 0;
+//   border: 0.1rem solid rgba(0, 0, 0, 0.3);
+//   text-transform: none;
+// }
+
+.login-background-container .form-background .btn-background {
+  display: block;
+  width: auto;
+  color: #fff;
+}
+
+.login-background-container #form-background-close {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+// ==========================
 .top-modif-menu .titre-page-menu {
   font-size: 22px;
   margin: 15px auto 15px;
@@ -93,10 +208,27 @@ body {
   justify-content: center;
   align-items: center;
   margin: 25px;
+  font-size: 20px;
 }
-.modif-date-menu i {
-  margin-left: 5px;
+.modif-date-menu label {
+  margin-right: 8px;
 }
+.modif-date-menu .input-date {
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+::-webkit-calendar-picker-indicator {
+  padding: 5px;
+  cursor: pointer;
+  // display: none;
+  margin-left: -30px;
+}
+// .modif-date-menu i {
+//   margin-left: 5px;
+// }
 // =================Section lignes-menu=================//
 .ajout-ligne {
   display: flex;
@@ -193,6 +325,23 @@ body {
     position: relative;
     width: 490px;
   }
+  .login-background-container {
+    top: -150%;
+  }
+  .login-background-container .form-background {
+    height: auto;
+  }
+  .login-background-container .form-background .choix-back {
+    padding: 5px 24px;
+    margin: 0 auto;
+    width: 95%;
+  }
+  .login-background-container .form-background .choix-back .background {
+    width: 94px;
+  }
+  .background-default {
+    padding: 57px 47px;
+  }
   .designation-menu {
     @include admin-border-menu;
     width: 300px;
@@ -202,6 +351,25 @@ body {
   .page-admin {
     position: relative;
     width: 400px;
+  }
+
+  .login-background-container .form-background {
+    padding: 1.5rem 1rem;
+    width: 38rem;
+    height: auto;
+  }
+  .login-background-container .form-background h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .login-background-container .form-background .choix-back {
+    flex-direction: column;
+  }
+  .background-default {
+    padding: 46px 37px;
+  }
+  .login-background-container .form-background .choix-back .background {
+    width: 75px;
   }
 }
 @media screen and (max-width: 451px) {

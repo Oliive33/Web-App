@@ -971,6 +971,139 @@ body {
           align-items: center;
 }
 
+.background-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 4.8rem;
+  margin-bottom: 1rem;
+}
+
+.btn-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.btn-background {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #131313;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-background:hover {
+  background: rgba(253, 7, 7, 0.973);
+}
+
+.login-background-container {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-background-container.active {
+  top: 0;
+}
+
+.login-background-container .form-background {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 38rem;
+  height: 22rem;
+}
+
+.login-background-container .form-background .choix-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #7e7e7e;
+  padding: 5px 2px;
+  border-radius: 5px;
+}
+
+.login-background-container .form-background .choix-back .background {
+  width: 150px;
+  margin: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.login-background-container .form-background .choix-back .background:hover {
+  border: 2px solid rgba(253, 7, 7, 0.973);
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.background-default {
+  background: white;
+  padding: 90px 73.41px;
+  margin: 7px;
+}
+
+.login-background-container .form-background h3 {
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.login-background-container .form-background .btn-background {
+  display: block;
+  width: auto;
+  color: #fff;
+}
+
+.login-background-container #form-background-close {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
 .top-modif-menu .titre-page-menu {
   font-size: 22px;
   margin: 15px auto 15px;
@@ -1007,10 +1140,25 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 25px;
+  font-size: 20px;
 }
 
-.modif-date-menu i {
-  margin-left: 5px;
+.modif-date-menu label {
+  margin-right: 8px;
+}
+
+.modif-date-menu .input-date {
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+::-webkit-calendar-picker-indicator {
+  padding: 5px;
+  cursor: pointer;
+  margin-left: -30px;
 }
 
 .ajout-ligne {
@@ -1142,6 +1290,23 @@ body {
     position: relative;
     width: 490px;
   }
+  .login-background-container {
+    top: -150%;
+  }
+  .login-background-container .form-background {
+    height: auto;
+  }
+  .login-background-container .form-background .choix-back {
+    padding: 5px 24px;
+    margin: 0 auto;
+    width: 95%;
+  }
+  .login-background-container .form-background .choix-back .background {
+    width: 94px;
+  }
+  .background-default {
+    padding: 57px 47px;
+  }
   .designation-menu {
     background: #fff;
     color: #000;
@@ -1154,6 +1319,27 @@ body {
   .page-admin {
     position: relative;
     width: 400px;
+  }
+  .login-background-container .form-background {
+    padding: 1.5rem 1rem;
+    width: 38rem;
+    height: auto;
+  }
+  .login-background-container .form-background h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .login-background-container .form-background .choix-back {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .background-default {
+    padding: 46px 37px;
+  }
+  .login-background-container .form-background .choix-back .background {
+    width: 75px;
   }
 }
 
