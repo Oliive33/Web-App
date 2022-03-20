@@ -242,7 +242,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 25px;
-  font-size: 20px;
+  // font-size: 20px;
 }
 .modif-date-menu label {
   margin-right: 8px;
@@ -253,13 +253,13 @@ body {
   background: transparent !important;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 16px;
 }
 ::-webkit-calendar-picker-indicator {
   padding: 5px;
   cursor: pointer;
   // display: none;
-  margin-left: -30px;
+  margin-left: -35px;
 }
 // .modif-date-menu i {
 //   margin-left: 5px;
@@ -412,9 +412,9 @@ body {
     position: relative;
     width: 350px;
   }
-  .login-background-container {
-    top: -100%;
-  }
+  // .login-background-container {
+  //   top: -100%;
+  // }
   .designation-menu {
     @include admin-border-menu;
     width: 100%;
