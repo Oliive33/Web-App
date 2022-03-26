@@ -228,10 +228,11 @@ body {
   display: none;
 }
 .modif-titre-menu h4 {
+  @include admin-border-menu;
+  font-family: $title-font;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
-  @include admin-border-menu;
   border-radius: 3px;
   padding: 2px 10px;
   width: 100%;
@@ -242,7 +243,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 25px;
-  // font-size: 20px;
 }
 .modif-date-menu label {
   margin-right: 8px;
@@ -251,7 +251,7 @@ body {
   border: none;
   outline: none;
   background: transparent !important;
-  font-family: "Poppins", sans-serif;
+  font-family: $date-font;
   font-weight: 700;
   font-size: 16px;
 }
@@ -259,11 +259,8 @@ body {
   padding: 5px;
   cursor: pointer;
   // display: none;
-  margin-left: -35px;
+  margin-left: -30px;
 }
-// .modif-date-menu i {
-//   margin-left: 5px;
-// }
 // =================Section lignes-menu=================//
 .ajout-ligne {
   display: flex;
@@ -299,6 +296,7 @@ body {
   border-radius: 3px;
   text-align: left;
   width: 500px;
+  // font-family: $menu-font;
 }
 .descriptif-plat {
   display: flex;
@@ -328,6 +326,7 @@ body {
   border: 1px solid red;
   width: 100%;
   margin: 0 auto;
+  font-family: $phrase-bottom-font;
 }
 .btn-send-menu {
   display: flex;
