@@ -63,3 +63,26 @@ file.addEventListener("change", function () {
     reader.readAsDataURL(choosedFile);
   }
 });
+// /*===============  SWIPER ===============*/
+let swiper = new Swiper(".themes-menu", {
+  loop: true,
+  spaceBetween: 58,
+  slidesPerView: "auto",
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 43,
+    },
+    1024: {
+      spaceBetween: 48,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
