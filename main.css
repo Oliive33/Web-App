@@ -919,18 +919,21 @@ body {
 }
 
 .container-administrateur {
+  position: absolute;
   width: 100%;
-  height: auto;
+  min-height: 150vh;
   background-image: url(./media/basic-pics/back-admin.jpg);
-  background-position: top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  opacity: 0.8;
+  -webkit-filter: blur(2px) opacity(0.8);
+          filter: blur(2px) opacity(0.8);
+  z-index: -1000;
 }
 
 .main {
-  margin-top: 100px;
+  position: relative;
+  margin-top: 70px;
   margin-bottom: 55px;
 }
 
@@ -1699,7 +1702,21 @@ body {
   padding: 0;
 }
 
+.container-global-client {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./media/basic-pics/back-client.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: blur(2px) opacity(0.4);
+          filter: blur(2px) opacity(0.4);
+  z-index: -1000;
+}
+
 .page-client {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1709,6 +1726,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 20px auto 50px;
+  z-index: 1000;
 }
 
 .container-client-default {

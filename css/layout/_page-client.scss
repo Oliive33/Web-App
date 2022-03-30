@@ -10,11 +10,24 @@
   margin: 0;
   padding: 0;
 }
+.container-global-client {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./media/basic-pics/back-client.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(2px) opacity(0.4);
+  z-index: -1000;
+}
 .page-client {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 20px auto 50px;
+  z-index: 1000;
 }
 // ===============container client default=================//
 .container-client-default {
