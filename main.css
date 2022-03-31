@@ -1,24 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@font-face {
+  font-family: "Classic";
+  src: url("./fonts/Description/Classic/Moon2.0-Regular.otf") format("truetype");
+  src: url("./fonts/Description/Classic/Moon2.0-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Manuscrit";
+  src: url("./fonts/Description/Manuscrit/Honey.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rolls";
+  src: url("./fonts/Description/Rolls/SouvenirGotURWTOTRegW03-Rg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Prix-Grand-titre";
+  src: url("./fonts/Prix-Grand-Titre-et-Signature/etna-free-font.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sous-description";
+  src: url("./fonts/Sous-Description/Inter-ExtraLight-BETA.ttf") format("truetype");
+}
+
 /*===== Colors =====*/
 /*===== fonts & typos =====*/
 /*===== sizes fonts =====*/
 /*===== z index =====*/
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1185,7 +1211,7 @@ body {
   font-family: "Hammersmith One", sans-serif;
   color: black;
   letter-spacing: 1px;
-  margin: 10px 0px 5px 0;
+  margin: 10px 0px 10px 0;
   font-size: 13px;
 }
 
@@ -1213,14 +1239,14 @@ body {
   text-align: left;
   font-weight: 600;
   margin-bottom: 5px;
-  font-size: 10px;
+  font-size: 11px;
   font-family: "Handlee", cursive;
   color: black;
 }
 
 .name_repas-theme {
-  font-size: 8px;
-  margin: 3px 0 6px 0;
+  font-size: 9px;
+  margin: 3px 0 5px 0;
   font-weight: bolder;
   font-family: "Handlee", cursive;
   color: black;
@@ -1270,7 +1296,7 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-left: 0.5rem;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
   color: red;
@@ -1301,12 +1327,40 @@ body {
   font-weight: bold;
   color: black;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .new__card-theme .img-card-theme {
   width: 35px;
   height: 35px;
+}
+
+.title_repas-parchemin {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: black;
+  font-family: "Manuscrit", sans-serif;
+}
+
+.name_repas-parchemin {
+  font-family: "Manuscrit", sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.prix-parchemin {
+  font-family: "Prix-Grand-titre", sans-serif;
+}
+
+.name_soustitre-parchemin {
+  font-family: "Sous-description", sans-serif;
+  font-size: 9px;
+}
+
+.phrase_parchemin {
+  margin-top: -8px;
 }
 
 .top-card-ardoise {
@@ -1315,6 +1369,7 @@ body {
 
 .items-menu-ardoise h3 {
   color: #fff;
+  font-family: "Prix-Grand-titre", sans-serif;
 }
 
 .repas-title-ardoise {
@@ -1334,16 +1389,30 @@ body {
 }
 
 .repas-ardoise {
+  font-family: "Rolls", sans-serif;
   color: #fff;
   text-align: left;
+  font-size: 11px;
+}
+
+.sous-titre-ardoise {
+  margin-top: 1px;
+  color: #fff;
+  text-align: left;
+  font-family: "Sous-description", sans-serif;
+}
+
+.prix-ardoise {
+  font-family: "Prix-Grand-titre", sans-serif;
 }
 
 .card-phrase-ardoise {
-  font-family: "Hammersmith One", sans-serif;
+  font-family: "Prix-Grand-titre", sans-serif;
   font-size: 10px;
   font-weight: bold;
   color: #fff;
   letter-spacing: 1px;
+  margin-top: 4px;
   margin-bottom: 10px;
 }
 
@@ -1361,20 +1430,6 @@ body {
 }
 
 /*Class Swiper*/
-.swiper-button-next,
-.swiper-button-prev {
-  height: 4.9rem;
-  width: 1.7rem;
-  background: transparent;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 1rem;
-  color: #000;
-  background: transparent;
-}
-
 .top-modif-menu .titre-page-menu {
   font-size: 22px;
   margin: 15px auto 15px;

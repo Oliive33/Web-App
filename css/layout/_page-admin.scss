@@ -13,9 +13,6 @@ body {
   min-height: 100vh;
 }
 // =================Section top-modif-menu=================//
-// .container-administrateur {
-//   margin-top: 120px;
-// }
 .container-administrateur {
   position: absolute;
   width: 100%;
@@ -61,7 +58,7 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-// ====================Popup background start======================//
+// ====================Popup thème start======================//
 
 .background-btn {
   display: flex;
@@ -243,7 +240,7 @@ body {
   font-family: $title-font;
   color: rgb(0, 0, 0);
   letter-spacing: 1px;
-  margin: 10px 0px 5px 0;
+  margin: 10px 0px 10px 0;
   font-size: 13px;
 }
 
@@ -264,13 +261,13 @@ body {
   text-align: left;
   font-weight: 600;
   margin-bottom: 5px;
-  font-size: 10px;
+  font-size: 11px;
   font-family: $menu-font;
   color: rgb(0, 0, 0);
 }
 .name_repas-theme {
-  font-size: 8px;
-  margin: 3px 0 6px 0;
+  font-size: 9px;
+  margin: 3px 0 5px 0;
   font-weight: bolder;
   font-family: $menu-font;
   color: rgb(0, 0, 0);
@@ -297,7 +294,7 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   padding-left: 0.5rem;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1px;
   font-family: $body-font;
   color: red;
@@ -317,11 +314,39 @@ body {
   font-weight: bold;
   color: rgb(0, 0, 0);
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .new__card-theme .img-card-theme {
   width: 35px;
   height: 35px;
+}
+// theme parchemin
+// .title-parchemin {
+// }
+// .datejour-parchemin {
+// }
+.title_repas-parchemin {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-family: "Manuscrit", sans-serif;
+}
+.name_repas-parchemin {
+  font-family: "Manuscrit", sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+}
+.prix-parchemin {
+  font-family: "Prix-Grand-titre", sans-serif;
+}
+.name_soustitre-parchemin {
+  font-family: "Sous-description", sans-serif;
+  font-size: 9px;
+}
+.phrase_parchemin {
+  margin-top: -8px;
 }
 // theme ardoise
 .top-card-ardoise {
@@ -329,6 +354,7 @@ body {
 }
 .items-menu-ardoise h3 {
   color: #fff;
+  font-family: "Prix-Grand-titre", sans-serif;
 }
 .repas-title-ardoise {
   text-align: left;
@@ -346,15 +372,27 @@ body {
   font-weight: 300;
 }
 .repas-ardoise {
+  font-family: "Rolls", sans-serif;
   color: #fff;
   text-align: left;
+  font-size: 11px;
+}
+.sous-titre-ardoise {
+  margin-top: 1px;
+  color: #fff;
+  text-align: left;
+  font-family: "Sous-description", sans-serif;
+}
+.prix-ardoise {
+  font-family: "Prix-Grand-titre", sans-serif;
 }
 .card-phrase-ardoise {
-  font-family: $phrase-bottom-font;
+  font-family: "Prix-Grand-titre", sans-serif;
   font-size: 10px;
   font-weight: bold;
   color: #fff;
   letter-spacing: 1px;
+  margin-top: 4px;
   margin-bottom: 10px;
 }
 .themes-menu {
@@ -370,18 +408,18 @@ body {
   }
 }
 /*Class Swiper*/
-.swiper-button-next,
-.swiper-button-prev {
-  height: 4.9rem;
-  width: 1.7rem;
-  background: transparent;
-}
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 1rem;
-  color: #000;
-  background: transparent;
-}
+// .swiper-button-next,
+// .swiper-button-prev {
+//   height: 4.9rem;
+//   width: 1.7rem;
+//   background: transparent;
+// }
+// .swiper-button-next::after,
+// .swiper-button-prev::after {
+//   font-size: 1rem;
+//   color: #000;
+//   background: transparent;
+// }
 // ===========================================//
 // ==================Main logo=================//
 .top-modif-menu .titre-page-menu {

@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "Classic";
+  src: url("./fonts/Description/Classic/Moon2.0-Regular.otf") format("truetype");
+  src: url("./fonts/Description/Classic/Moon2.0-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "Manuscrit";
+  src: url("./fonts/Description/Manuscrit/Honey.otf") format("truetype");
+}
+@font-face {
+  font-family: "Rolls";
+  src: url("./fonts/Description/Rolls/SouvenirGotURWTOTRegW03-Rg.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Prix-Grand-titre";
+  src: url("./fonts/Prix-Grand-Titre-et-Signature/etna-free-font.otf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Sous-description";
+  src: url("./fonts/Sous-Description/Inter-ExtraLight-BETA.ttf")
+    format("truetype");
+}
+
 @import "./css/utils/variables";
 @import "./css/utils/mixins";
 @import "./css/layout/index";
