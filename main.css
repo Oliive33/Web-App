@@ -1335,6 +1335,10 @@ body {
   height: 35px;
 }
 
+.datejour-parchemin {
+  margin-top: -6px;
+}
+
 .title_repas-parchemin {
   text-align: left;
   font-weight: 600;
@@ -1392,7 +1396,7 @@ body {
   font-family: "Rolls", sans-serif;
   color: #fff;
   text-align: left;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 .sous-titre-ardoise {
@@ -1412,7 +1416,7 @@ body {
   font-weight: bold;
   color: #fff;
   letter-spacing: 1px;
-  margin-top: 4px;
+  margin-top: 2px;
   margin-bottom: 10px;
 }
 
@@ -1730,6 +1734,9 @@ body {
     position: relative;
     width: 340px;
     padding: 8px;
+  }
+  .items-menu-ardoise .items-ardoise-datejour {
+    margin-top: -4px;
   }
 }
 
