@@ -124,27 +124,12 @@ body {
   padding: 15px 12px;
   border-radius: 5px;
 }
-// .login-background-container .form-background .choix-back .background {
-//   width: 150px;
-//   margin: 7px;
-//   transition: all 0.2s ease-in-out;
-// }
-// .login-background-container .form-background .choix-back .background:hover {
-//   border: 2px solid $first-color;
-//   transform: scale(1.05);
-//   cursor: pointer;
-// }
-// .background-default {
-//   background: white;
-//   padding: 90px 73.41px;
-//   margin: 7px;
-// }
 .login-background-container .form-background .form-background-title {
-  font-size: 18px;
+  font-size: 17px;
   color: rgb(0, 0, 0);
   text-transform: capitalize;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .login-background-container .form-background .btn-background {
@@ -173,14 +158,13 @@ body {
 .container-theme-default {
   position: relative;
   width: 300px;
-  height: 305px;
+  height: 340px;
   box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75%);
   background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2px;
-  // margin: 10px;
   border-radius: 4px;
   text-align: center;
   overflow: hidden;
@@ -189,14 +173,13 @@ body {
 .container-theme-parchemin {
   position: relative;
   width: 300px;
-  height: 305px;
+  height: 340px;
   box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
   background-image: url(./media/basic-pics/parchemin.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2px;
-  // margin: 10px;
   border-radius: 4px;
   text-align: center;
   overflow: hidden;
@@ -205,14 +188,13 @@ body {
 .container-theme-ardoise {
   position: relative;
   width: 300px;
-  height: 305px;
+  height: 340px;
   box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
   background-image: url(./media/basic-pics/ardoise.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2px;
-  // margin: 10px;
+  padding: 3px;
   border-radius: 4px;
   text-align: center;
   overflow: hidden;
@@ -222,8 +204,8 @@ body {
 .container-theme-default:hover,
 .container-theme-parchemin:hover,
 .container-theme-ardoise:hover {
-  border: 2px solid $first-color;
-  transform: scale(1.04);
+  border: 1px solid $first-color;
+  transform: scale(1.02);
 }
 .top-card-menu {
   font-size: 12px;
@@ -261,23 +243,25 @@ body {
   text-align: left;
   font-weight: 600;
   margin-bottom: 5px;
-  font-size: 11px;
-  font-family: $menu-font;
+  font-size: 12px;
+  font-family: "Classic", sans-serif;
+  letter-spacing: 0.5px;
   color: rgb(0, 0, 0);
 }
 .name_repas-theme {
-  font-size: 9px;
-  margin: 3px 0 5px 0;
+  font-size: 10px;
+  margin: 5px 0 4px 0;
   font-weight: bolder;
-  font-family: $menu-font;
+  font-family: "Classic", sans-serif;
+  letter-spacing: 0.3px;
   color: rgb(0, 0, 0);
   text-align: left;
 }
 .name_repas-soustitre-theme {
-  font-size: 7px;
+  font-size: 8px;
   font-weight: 400;
-  margin-top: -5px;
-  font-family: $body-font;
+  margin-top: -1px;
+  font-family: "Sous-description", sans-serif;
 }
 .text_repas-theme {
   display: flex;
@@ -296,7 +280,7 @@ body {
   padding-left: 0.5rem;
   font-size: 12px;
   letter-spacing: 1px;
-  font-family: $body-font;
+  font-family: "Prix-Grand-titre", sans-serif;
   color: red;
   font-weight: bold;
 }
@@ -309,11 +293,12 @@ body {
   margin-bottom: 5px;
 }
 .new__card-theme .new__card-phrase-theme {
-  font-family: $phrase-bottom-font;
+  font-family: "Prix-Grand-titre", sans-serif;
   font-size: 10px;
   font-weight: bold;
   color: rgb(0, 0, 0);
   letter-spacing: 1px;
+  margin-top: 6px;
   margin-bottom: 5px;
 }
 .new__card-theme .img-card-theme {
@@ -328,14 +313,14 @@ body {
 }
 .title_repas-parchemin {
   text-align: left;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 5px;
-  font-size: 16px;
+  font-size: 14px;
   color: rgb(0, 0, 0);
-  font-family: "Manuscrit", sans-serif;
+  font-family: "Rolls", sans-serif;
 }
 .name_repas-parchemin {
-  font-family: "Manuscrit", sans-serif;
+  font-family: "Rolls", sans-serif;
   font-size: 12px;
   font-weight: 200;
 }
@@ -347,7 +332,8 @@ body {
   font-size: 9px;
 }
 .phrase_parchemin {
-  margin-top: -8px;
+  font-family: "Prix-Grand-titre", sans-serif;
+  // margin-top: -8px;
 }
 // theme ardoise
 .top-card-ardoise {
@@ -357,14 +343,6 @@ body {
   color: #fff;
   font-family: "Prix-Grand-titre", sans-serif;
 }
-.repas-title-ardoise {
-  text-align: left;
-  font-weight: 600;
-  margin-bottom: 5px;
-  font-size: 10px;
-  font-family: $menu-font;
-  color: #fff;
-}
 
 .items-menu-ardoise .items-ardoise-datejour {
   font-family: $date-font;
@@ -372,11 +350,21 @@ body {
   font-size: 10px;
   font-weight: 300;
 }
+.repas-title-ardoise {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Manuscrit", sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+}
 .repas-ardoise {
-  font-family: "Rolls", sans-serif;
+  font-family: "Manuscrit", sans-serif;
   color: #fff;
   text-align: left;
-  font-size: 10px;
+  font-size: 11.5px;
+  letter-spacing: 1.2px;
 }
 .sous-titre-ardoise {
   margin-top: 1px;
@@ -393,8 +381,8 @@ body {
   font-weight: bold;
   color: #fff;
   letter-spacing: 1px;
-  margin-top: 2px;
-  margin-bottom: 10px;
+  margin-top: 4px;
+  margin-bottom: 9px;
 }
 .themes-menu {
   max-width: 1220px;
@@ -475,7 +463,7 @@ body {
   font-weight: 500;
   text-align: center;
   border-radius: 3px;
-  padding: 2px 10px;
+  padding: 4px 10px;
   width: 100%;
   margin: 0 auto;
 }
@@ -629,18 +617,6 @@ body {
   .login-background-container {
     top: -150%;
   }
-
-  // .login-background-container .form-background .choix-back {
-  //   padding: 5px 24px;
-  //   margin: 0 auto;
-  //   width: 95%;
-  // }
-  // .login-background-container .form-background .choix-back .background {
-  //   width: 94px;
-  // }
-  // .background-default {
-  //   padding: 57px 47px;
-  // }
   .designation-menu {
     @include admin-border-menu;
     width: 300px;
@@ -653,19 +629,9 @@ body {
   }
 
   .login-background-container .form-background h3 {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 15px;
+    margin-bottom: 13px;
   }
-
-  // .login-background-container .form-background .choix-back {
-  //   flex-direction: column;
-  // }
-  // .background-default {
-  //   padding: 46px 37px;
-  // }
-  // .login-background-container .form-background .choix-back .background {
-  //   width: 75px;
-  // }
 }
 @media screen and (max-width: 451px) {
   .page-admin {
@@ -675,10 +641,14 @@ body {
   .login-background-container .form-background .form-background-title {
     font-size: 15px;
   }
+  .login-background-container .form-background h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
   .container-theme-default,
   .container-theme-parchemin,
   .container-theme-ardoise {
-    width: 250px;
+    width: 255px;
     margin: 0 auto;
   }
   .designation-menu {
@@ -695,8 +665,8 @@ body {
     width: 340px;
     padding: 8px;
   }
-  .items-menu-ardoise .items-ardoise-datejour {
-    margin-top: -4px;
+  .new__card-theme .new__card-phrase-theme {
+    margin-top: 1px;
   }
 }
 @media screen and (max-width: 349px) {

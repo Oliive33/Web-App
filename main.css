@@ -17,7 +17,6 @@
 @font-face {
   font-family: "Classic";
   src: url("./fonts/Description/Classic/Moon2.0-Regular.otf") format("truetype");
-  src: url("./fonts/Description/Classic/Moon2.0-Bold.otf") format("truetype");
 }
 
 @font-face {
@@ -1095,11 +1094,11 @@ body {
 }
 
 .login-background-container .form-background .form-background-title {
-  font-size: 18px;
+  font-size: 17px;
   color: black;
   text-transform: capitalize;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .login-background-container .form-background .btn-background {
@@ -1134,7 +1133,7 @@ body {
 .container-theme-default {
   position: relative;
   width: 300px;
-  height: 305px;
+  height: 340px;
   -webkit-box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
           box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
   background-color: #fff;
@@ -1152,7 +1151,7 @@ body {
 .container-theme-parchemin {
   position: relative;
   width: 300px;
-  height: 305px;
+  height: 340px;
   -webkit-box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
           box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
   background-image: url(./media/basic-pics/parchemin.jpg);
@@ -1170,14 +1169,14 @@ body {
 .container-theme-ardoise {
   position: relative;
   width: 300px;
-  height: 305px;
+  height: 340px;
   -webkit-box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
           box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
   background-image: url(./media/basic-pics/ardoise.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2px;
+  padding: 3px;
   border-radius: 4px;
   text-align: center;
   overflow: hidden;
@@ -1189,9 +1188,9 @@ body {
 .container-theme-default:hover,
 .container-theme-parchemin:hover,
 .container-theme-ardoise:hover {
-  border: 2px solid rgba(253, 7, 7, 0.973);
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
+  border: 1px solid rgba(253, 7, 7, 0.973);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .top-card-menu {
@@ -1239,25 +1238,27 @@ body {
   text-align: left;
   font-weight: 600;
   margin-bottom: 5px;
-  font-size: 11px;
-  font-family: "Handlee", cursive;
+  font-size: 12px;
+  font-family: "Classic", sans-serif;
+  letter-spacing: 0.5px;
   color: black;
 }
 
 .name_repas-theme {
-  font-size: 9px;
-  margin: 3px 0 5px 0;
+  font-size: 10px;
+  margin: 5px 0 4px 0;
   font-weight: bolder;
-  font-family: "Handlee", cursive;
+  font-family: "Classic", sans-serif;
+  letter-spacing: 0.3px;
   color: black;
   text-align: left;
 }
 
 .name_repas-soustitre-theme {
-  font-size: 7px;
+  font-size: 8px;
   font-weight: 400;
-  margin-top: -5px;
-  font-family: "Poppins", sans-serif;
+  margin-top: -1px;
+  font-family: "Sous-description", sans-serif;
 }
 
 .text_repas-theme {
@@ -1298,7 +1299,7 @@ body {
   padding-left: 0.5rem;
   font-size: 12px;
   letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Prix-Grand-titre", sans-serif;
   color: red;
   font-weight: bold;
 }
@@ -1322,11 +1323,12 @@ body {
 }
 
 .new__card-theme .new__card-phrase-theme {
-  font-family: "Hammersmith One", sans-serif;
+  font-family: "Prix-Grand-titre", sans-serif;
   font-size: 10px;
   font-weight: bold;
   color: black;
   letter-spacing: 1px;
+  margin-top: 6px;
   margin-bottom: 5px;
 }
 
@@ -1341,15 +1343,15 @@ body {
 
 .title_repas-parchemin {
   text-align: left;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 5px;
-  font-size: 16px;
+  font-size: 14px;
   color: black;
-  font-family: "Manuscrit", sans-serif;
+  font-family: "Rolls", sans-serif;
 }
 
 .name_repas-parchemin {
-  font-family: "Manuscrit", sans-serif;
+  font-family: "Rolls", sans-serif;
   font-size: 12px;
   font-weight: 200;
 }
@@ -1364,7 +1366,7 @@ body {
 }
 
 .phrase_parchemin {
-  margin-top: -8px;
+  font-family: "Prix-Grand-titre", sans-serif;
 }
 
 .top-card-ardoise {
@@ -1376,15 +1378,6 @@ body {
   font-family: "Prix-Grand-titre", sans-serif;
 }
 
-.repas-title-ardoise {
-  text-align: left;
-  font-weight: 600;
-  margin-bottom: 5px;
-  font-size: 10px;
-  font-family: "Handlee", cursive;
-  color: #fff;
-}
-
 .items-menu-ardoise .items-ardoise-datejour {
   font-family: "Hammersmith One", sans-serif;
   color: #fff;
@@ -1392,11 +1385,22 @@ body {
   font-weight: 300;
 }
 
+.repas-title-ardoise {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Manuscrit", sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
 .repas-ardoise {
-  font-family: "Rolls", sans-serif;
+  font-family: "Manuscrit", sans-serif;
   color: #fff;
   text-align: left;
-  font-size: 10px;
+  font-size: 11.5px;
+  letter-spacing: 1.2px;
 }
 
 .sous-titre-ardoise {
@@ -1416,8 +1420,8 @@ body {
   font-weight: bold;
   color: #fff;
   letter-spacing: 1px;
-  margin-top: 2px;
-  margin-bottom: 10px;
+  margin-top: 4px;
+  margin-bottom: 9px;
 }
 
 .themes-menu {
@@ -1490,13 +1494,15 @@ body {
 .modif-titre-menu h4 {
   background: #fff;
   color: #000;
-  border: 1px solid #000;
+  border: 1px solid #cecece;
+  -webkit-box-shadow: 0px 1px 4px 2px rgba(179, 179, 179, 0.65);
+          box-shadow: 0px 1px 4px 2px rgba(179, 179, 179, 0.65);
   font-family: "Hammersmith One", sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
   border-radius: 3px;
-  padding: 2px 10px;
+  padding: 4px 10px;
   width: 100%;
   margin: 0 auto;
 }
@@ -1580,7 +1586,9 @@ body {
 .designation-menu {
   background: #fff;
   color: #000;
-  border: 1px solid #000;
+  border: 1px solid #cecece;
+  -webkit-box-shadow: 0px 1px 4px 2px rgba(179, 179, 179, 0.65);
+          box-shadow: 0px 1px 4px 2px rgba(179, 179, 179, 0.65);
   padding: 5px 120px 5px 5px;
   border-radius: 3px;
   text-align: left;
@@ -1605,7 +1613,9 @@ body {
 .prix-menu {
   background: #fff;
   color: #000;
-  border: 1px solid #000;
+  border: 1px solid #cecece;
+  -webkit-box-shadow: 0px 1px 4px 2px rgba(179, 179, 179, 0.65);
+          box-shadow: 0px 1px 4px 2px rgba(179, 179, 179, 0.65);
   padding: 7px 10px 5px 5px;
   border-radius: 3px;
   font-size: 12px;
@@ -1688,7 +1698,9 @@ body {
   .designation-menu {
     background: #fff;
     color: #000;
-    border: 1px solid #000;
+    border: 1px solid #cecece;
+    -webkit-box-shadow: 0px 1px 4px 2px rgba(179, 179, 179, 0.65);
+            box-shadow: 0px 1px 4px 2px rgba(179, 179, 179, 0.65);
     width: 300px;
   }
 }
@@ -1699,8 +1711,8 @@ body {
     width: 400px;
   }
   .login-background-container .form-background h3 {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 15px;
+    margin-bottom: 13px;
   }
 }
 
@@ -1712,16 +1724,22 @@ body {
   .login-background-container .form-background .form-background-title {
     font-size: 15px;
   }
+  .login-background-container .form-background h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
   .container-theme-default,
   .container-theme-parchemin,
   .container-theme-ardoise {
-    width: 250px;
+    width: 255px;
     margin: 0 auto;
   }
   .designation-menu {
     background: #fff;
     color: #000;
-    border: 1px solid #000;
+    border: 1px solid #cecece;
+    -webkit-box-shadow: 0px 1px 4px 2px rgba(179, 179, 179, 0.65);
+            box-shadow: 0px 1px 4px 2px rgba(179, 179, 179, 0.65);
     width: 100%;
   }
   .btn-background {
@@ -1735,8 +1753,8 @@ body {
     width: 340px;
     padding: 8px;
   }
-  .items-menu-ardoise .items-ardoise-datejour {
-    margin-top: -4px;
+  .new__card-theme .new__card-phrase-theme {
+    margin-top: 1px;
   }
 }
 
