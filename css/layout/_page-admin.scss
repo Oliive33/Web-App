@@ -219,7 +219,7 @@ body {
   margin: 5px 0 5px 0;
 }
 .items-theme-menu h3 {
-  font-family: $title-font;
+  font-family: "Prix-Grand-titre", sans-serif;
   color: rgb(0, 0, 0);
   letter-spacing: 1px;
   margin: 10px 0px 10px 0;
@@ -305,9 +305,6 @@ body {
   width: 35px;
   height: 35px;
 }
-// theme parchemin
-// .title-parchemin {
-// }
 .datejour-parchemin {
   margin-top: -6px;
 }
@@ -401,11 +398,12 @@ body {
 // .swiper-button-prev {
 //   height: 4.9rem;
 //   width: 1.7rem;
+//   font-size: 4px;
 //   background: transparent;
 // }
 // .swiper-button-next::after,
 // .swiper-button-prev::after {
-//   font-size: 1rem;
+//   font-size: 4px;
 //   color: #000;
 //   background: transparent;
 // }
@@ -606,14 +604,6 @@ body {
     position: relative;
     width: 690px;
   }
-  // .login-background-container .form-background {
-  //   margin: 2rem;
-  //   padding: 1.5rem 1rem;
-  //   border-radius: 0.5rem;
-  //   background: #fff;
-  //   width: 44rem;
-  //   height: 30rem;
-  // }
   .login-background-container {
     top: -150%;
   }
