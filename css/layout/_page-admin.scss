@@ -109,7 +109,8 @@ body {
 }
 
 .login-background-container .form-background {
-  margin: 2rem;
+  // margin: 2rem;
+  margin-top: -5rem;
   padding: 1.5rem 1rem;
   border-radius: 0.5rem;
   background: #fff;
@@ -394,19 +395,27 @@ body {
   }
 }
 /*Class Swiper*/
-// .swiper-button-next,
-// .swiper-button-prev {
-//   height: 4.9rem;
-//   width: 1.7rem;
-//   font-size: 4px;
-//   background: transparent;
-// }
-// .swiper-button-next::after,
-// .swiper-button-prev::after {
-//   font-size: 4px;
-//   color: #000;
-//   background: transparent;
-// }
+.swiper-button-next-theme,
+.swiper-button-prev-theme {
+  height: 4.9rem;
+  width: 2rem;
+  background: transparent;
+}
+.swiper-button-prev-theme {
+  margin-left: -40px;
+}
+.left::after {
+  margin-right: 35px;
+}
+.right:after {
+  margin-left: 28px;
+}
+
+.swipe-theme::after {
+  font-size: 1.5rem !important;
+  color: #000;
+}
+
 // ===========================================//
 // ==================Main logo=================//
 .top-modif-menu .titre-page-menu {
@@ -454,16 +463,21 @@ body {
   cursor: pointer;
   display: none;
 }
-.modif-titre-menu h4 {
+.modif-titre-menu .slogan-title {
   @include admin-border-menu;
   font-family: $title-font;
   font-size: 16px;
-  font-weight: 500;
   text-align: center;
   border-radius: 3px;
   padding: 4px 10px;
   width: 100%;
   margin: 0 auto;
+  cursor: pointer;
+}
+.modif-titre-menu .slogan-title::placeholder {
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .modif-date-menu {
   display: flex;
@@ -513,34 +527,53 @@ body {
 .form-lignes-menu .form-designation-menu {
   margin-top: 20px;
 }
-.form-lignes-menu ul li {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
 .designation-menu {
   @include admin-border-menu;
   padding: 5px 120px 5px 5px;
   border-radius: 3px;
   text-align: left;
   width: 500px;
-  // font-family: $menu-font;
+  cursor: pointer;
+}
+.designation-menu::placeholder {
+  color: #000;
+  font-family: $body-font;
+  font-weight: 600;
 }
 .descriptif-plat {
   display: flex;
   align-items: center;
-  margin-top: -10px !important;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
+
 .descriptif-plat .link-designation-menu {
+  border: none;
+  outline: none;
+  padding: 5px 120px 5px 5px;
+  text-align: left;
+  width: 500px;
+  cursor: pointer;
+}
+.descriptif-plat .link-designation-menu::placeholder {
   font-size: 11px;
   color: $first-color;
+  font-family: $body-font;
+  font-weight: 600;
 }
 .prix-menu {
   @include admin-border-menu;
+  width: 15%;
   padding: 7px 10px 5px 5px;
   border-radius: 3px;
   font-size: 12px;
   margin-left: 5px;
-  margin-bottom: 35px !important;
+  cursor: pointer;
+}
+.prix-menu::placeholder {
+  color: #000;
+  font-weight: 500;
+  font-family: $body-font;
 }
 
 // =================Section modif-bottom-menu===========//
@@ -553,6 +586,17 @@ body {
   border: 1px solid red;
   width: 100%;
   margin: 0 auto;
+  font-family: $phrase-bottom-font;
+}
+.comment .input-comment {
+  border: 0;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+}
+.comment .input-comment::placeholder {
+  color: #000;
+  font-weight: 600;
   font-family: $phrase-bottom-font;
 }
 .btn-send-menu {
@@ -608,8 +652,11 @@ body {
     top: -150%;
   }
   .designation-menu {
-    @include admin-border-menu;
-    width: 300px;
+    width: 80%;
+  }
+  .prix-menu {
+    width: 14%;
+    font-size: 11px;
   }
 }
 @media screen and (max-width: 701px) {
@@ -622,7 +669,11 @@ body {
     font-size: 15px;
     margin-bottom: 13px;
   }
+  .prix-menu {
+    width: 32%;
+  }
 }
+
 @media screen and (max-width: 451px) {
   .page-admin {
     position: relative;
@@ -641,10 +692,6 @@ body {
     width: 255px;
     margin: 0 auto;
   }
-  .designation-menu {
-    @include admin-border-menu;
-    width: 100%;
-  }
   .btn-background {
     margin-right: 35px;
   }
@@ -658,18 +705,21 @@ body {
   .new__card-theme .new__card-phrase-theme {
     margin-top: 1px;
   }
+  .designation-menu {
+    padding: 5px 15px 5px 5px;
+    width: 70%;
+  }
+  .prix-menu {
+    width: 27%;
+  }
 }
 @media screen and (max-width: 349px) {
   .page-admin {
     position: relative;
     width: 315px;
   }
-  .designation-menu {
-    padding: 5px 100px 5px 5px;
-  }
   .prix-menu {
     padding: 5px 5px 5px 5px;
     font-size: 10px;
-    margin-bottom: 38px !important;
   }
 }

@@ -1,3 +1,30 @@
+/*===== MENU SHOW Y HIDDEN =====*/
+const navMenu = document.getElementById("nav-menu"),
+  toggleMenu = document.getElementById("nav-toggle"),
+  closeMenu = document.getElementById("nav-close");
+
+/*SHOW*/
+toggleMenu.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+});
+
+/*HIDDEN*/
+closeMenu.addEventListener("click", () => {
+  navMenu.classList.remove("show");
+});
+
+/*===== ACTIVE AND REMOVE MENU =====*/
+const navLink = document.querySelectorAll(".nav__link");
+
+function linkAction() {
+  /*Active link*/
+  navLink.forEach((n) => n.classList.remove("active"));
+  this.classList.add("active");
+
+  /*Remove menu mobile*/
+  navMenu.classList.remove("show");
+}
+navLink.forEach((n) => n.addEventListener("click", linkAction));
 const start = document.getElementById("start_date");
 const today = new Date().toISOString().split("T")[0];
 
@@ -69,10 +96,8 @@ let swiper = new Swiper(".themes-menu", {
   spaceBetween: 58,
   slidesPerView: "auto",
   grabCursor: true,
-  pagination: {
-    el: ".swiper-pagination",
-    dynamicBullets: true,
-  },
+  centeredSlides: true,
+
   breakpoints: {
     768: {
       slidesPerView: 43,
@@ -81,8 +106,8 @@ let swiper = new Swiper(".themes-menu", {
       spaceBetween: 48,
     },
   },
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
