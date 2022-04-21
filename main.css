@@ -125,8 +125,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.head-container p {
+  margin: 0 auto;
 }
 
 .form-control {
@@ -279,17 +284,15 @@ body {
     height: 80px;
   }
   .container {
-    width: 85%;
     padding: 1rem;
     margin: 90px auto 0;
   }
   .container h1 img {
     width: 55px;
-    height: 45px;
+    height: 55px;
   }
   .head-container p {
     font-size: 13px;
-    margin-left: 5px;
   }
   .form-control {
     width: 235px;
@@ -316,12 +319,15 @@ body {
     font-size: 13px;
   }
   .btn-connection {
-    margin: 20px 0 0;
+    margin: 20px 10px 0;
     font-size: 11px;
   }
 }
 
 @media screen and (max-width: 400px) {
+  .label {
+    margin-left: 5px;
+  }
   .btn-connection {
     padding: 8px 15px;
   }
@@ -947,8 +953,9 @@ body {
 .container-administrateur {
   position: absolute;
   width: 100%;
-  min-height: 150vh;
+  min-height: 200%;
   background-image: url(./media/basic-pics/back-admin.jpg);
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

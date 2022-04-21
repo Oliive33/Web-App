@@ -61,7 +61,10 @@ body {
 .head-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: start;
+}
+.head-container p {
+  margin: 0 auto;
 }
 
 .form-control {
@@ -185,17 +188,15 @@ body {
     height: 80px;
   }
   .container {
-    width: 85%;
     padding: 1rem;
     margin: 90px auto 0;
   }
   .container h1 img {
     width: 55px;
-    height: 45px;
+    height: 55px;
   }
   .head-container p {
     font-size: 13px;
-    margin-left: 5px;
   }
   .form-control {
     width: 235px;
@@ -222,11 +223,14 @@ body {
     font-size: 13px;
   }
   .btn-connection {
-    margin: 20px 0 0;
+    margin: 20px 10px 0;
     font-size: 11px;
   }
 }
 @media screen and (max-width: 400px) {
+  .label {
+    margin-left: 5px;
+  }
   .btn-connection {
     padding: 8px 15px;
   }

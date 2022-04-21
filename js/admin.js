@@ -74,7 +74,7 @@ imgDiv.addEventListener("mouseleave", function () {
   uploadBtn.style.display = "none";
 });
 
-//Quand on choissit une photo to upload
+//Quand on choisit une photo to upload
 
 file.addEventListener("change", function () {
   //this refers to file
