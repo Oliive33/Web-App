@@ -14,6 +14,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Short+Stack&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @font-face {
   font-family: "Classic";
   src: url("./fonts/Description/Classic/Moon2.0-Regular.otf") format("truetype");
@@ -515,7 +519,6 @@ img {
   background: transparent;
 }
 
-/*Aparecer menu*/
 .show {
   left: 0;
 }
@@ -609,19 +612,31 @@ img {
 }
 
 .page-menu {
-  margin: 75px auto 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin: 60px auto 5px;
 }
 
 .new__card {
   position: relative;
-  width: 350px;
+  width: 310px;
   height: 100%;
-  -webkit-box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
-          box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+  -webkit-box-shadow: 1px 3px 9px 2px rgba(171, 171, 171, 0.55);
+          box-shadow: 1px 3px 9px 2px rgba(171, 171, 171, 0.55);
   padding: 2px;
   border-radius: 4px;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 3px;
   overflow: hidden;
 }
 
@@ -640,38 +655,24 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   font-family: "Hammersmith One", sans-serif;
 }
 
 .new__card-date .new__card-phrase {
-  font-size: 17px;
+  font-size: 12px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 .new__card-date .img-card {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .new__card-date span {
   padding-top: 15px;
   font-size: 12px;
-}
-
-/*=============== NEW ===============*/
-.container-swiper {
-  max-width: 1220px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-@media screen and (min-width: 992px) {
-  .container-swiper {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 .items-card-menu {
@@ -729,7 +730,8 @@ img {
 }
 
 .container-overlay:hover .overlay {
-  height: 20%;
+  padding-top: 5px;
+  height: 30%;
 }
 
 .items-card {
@@ -737,8 +739,10 @@ img {
   margin-left: 10px;
 }
 
-.items-card .items-card-tittle {
+.items-card .items-card-title {
   font-family: "Hammersmith One", sans-serif;
+  font-size: 16px;
+  margin: 5px;
 }
 
 .items-card .items-card-datejour {
@@ -806,7 +810,7 @@ img {
           align-items: flex-start;
 }
 
-.prix {
+.price {
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -818,7 +822,7 @@ img {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-left: 0.5rem;
-  font-size: 14px;
+  font-size: 12px;
   color: red;
 }
 
@@ -829,41 +833,15 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  margin-top: 85px;
+  margin-bottom: 20px;
 }
 
 .btn-crea .btn-new-menu {
   margin: 0;
 }
 
-/*Class Swiper*/
-.swiper-button-next,
-.swiper-button-prev {
-  height: 4.9rem;
-  /* width: 1.7rem; */
-  background: transparent;
-  color: black;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 2rem;
-}
-
-@media screen and (max-width: 900px) {
-  .container-swiper {
-    max-width: 700px;
-  }
-  .new__card-date {
-    padding-top: 10px;
-    margin-bottom: 15px;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .page-menu {
-    margin: -30px auto 0px;
-  }
   .header {
     padding: 3px 1.5rem;
   }
@@ -879,42 +857,23 @@ img {
   }
   .items-card-title {
     font-size: 13px;
-    margin-top: 20px;
+    margin-top: 7px;
   }
   .repas .title_repas {
     font-size: 13px;
     margin-top: 5px;
-  }
-  .container-swiper {
-    max-width: 340px;
-    margin-left: 1rem;
-    margin-right: 1rem;
   }
   .overlay .para-swiper {
     width: 70%;
   }
   .new__card {
     position: relative;
-    width: 335px;
+    width: 311px;
     padding: 5px;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
-  }
-  .new__card-date {
-    padding-top: 30px;
-    margin-bottom: 15px;
   }
   .name_repas {
-    font-size: 13px;
+    font-size: 12px;
     margin: 5px 0 5px 0;
-  }
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    font-size: 1rem;
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
-    height: 14.9rem;
   }
   .new__card-date .new__card-phrase {
     font-size: 14px;
@@ -923,14 +882,16 @@ img {
     padding: 8px 5px;
     font-size: 12px;
   }
+  .nav__line {
+    width: 245px;
+    border-radius: 3px;
+    border: 2px solid white;
+  }
 }
 
 @media screen and (max-width: 475px) {
   .repas {
     padding: 0.8px;
-  }
-  .new__card {
-    margin-top: 1rem;
   }
   .new__card-date {
     padding-top: 10px;
@@ -951,9 +912,10 @@ body {
 }
 
 .container-administrateur {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
-  min-height: 200%;
+  height: 100%;
   background-image: url(./media/basic-pics/back-admin.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -1957,6 +1919,37 @@ body {
   z-index: -1000;
 }
 
+.switch-card a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 100000;
+  top: 15px;
+  left: 30px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.switch-card a img {
+  width: 15px;
+}
+
+.switch-card span {
+  color: rgba(253, 7, 7, 0.973);
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
 .page-client {
   position: relative;
   display: -webkit-box;
@@ -1967,7 +1960,7 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 20px auto 50px;
+  margin: 50px auto 50px;
   z-index: 1000;
 }
 
@@ -2159,17 +2152,84 @@ body {
   .container-client-parchemin,
   .container-client-default,
   .container-client-ardoise {
-    width: 339px;
+    width: 329px;
   }
 }
 
-.container-client-ardoise {
+/*===== GOOGLE FONTS =====*/
+/*===== BASE =====*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container-global-carte {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./media/basic-pics/back-ma-carte.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: blur(2px) opacity(0.4);
+          filter: blur(2px) opacity(0.4);
+  z-index: -1000;
+}
+
+.switch-card a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 100000;
+  top: 15px;
+  left: 30px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.switch-card a img {
+  width: 15px;
+}
+
+.switch-card span {
+  color: rgba(253, 7, 7, 0.973);
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.page-client {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px auto 50px;
+  z-index: 1000;
+}
+
+.container-client-default {
   position: relative;
   width: 350px;
   height: 100%;
   -webkit-box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
           box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
-  background-image: url(./media/basic-pics/ardoise.jpg);
+  background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2177,13 +2237,184 @@ body {
   border-radius: 4px;
   text-align: center;
   overflow: hidden;
-  color: #fff;
 }
 
-.img-ardoise {
+.container-client-default,
+.container-client-parchemin,
+.container-client-ardoise {
+  margin: 5px;
+}
+
+.container-client-parchemin {
+  position: relative;
+  width: 350px;
+  height: 100%;
+  -webkit-box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+          box-shadow: 1px 3px 9px 3px rgba(171, 171, 171, 0.75);
+  background-image: url(./media/basic-pics/parchemin.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2px;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.items-card-client {
+  margin: 40px 0 10px 0;
+}
+
+.items-card-client h3 {
+  font-family: "Hammersmith One", sans-serif;
+  letter-spacing: 1px;
+  margin: 52px 0px 15px 0;
+}
+
+.items-card-client .items-card-datejour {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.repas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7.8px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.repas .title_repas {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Handlee", cursive;
+}
+
+.name_repas {
+  font-size: 13px;
+  margin: 7px 0 7px 0;
+  font-weight: bolder;
+  font-family: "Handlee", cursive;
+}
+
+.name_repas-soustitre-client {
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: -5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.text_repas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.repas-et-soustitre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 0.5rem;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  color: red;
+  font-weight: bold;
+}
+
+.new__card-client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+  margin-bottom: 5px;
+}
+
+.new__card-client .new__card-phrase-client {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.new__card-client .img-card-client {
   width: 50px;
   height: 50px;
-  background-color: #fff;
-  border: none;
+}
+
+@media screen and (max-width: 1180px) {
+  .page-client {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .page-client {
+    margin: 50px auto 50px;
+  }
+  .top-modif-menu .titre-page-menu {
+    margin: 15px 0 20px 0;
+  }
+  .modif-titre-menu h4 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-client-parchemin,
+  .container-client-default,
+  .container-client-ardoise {
+    width: 325px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

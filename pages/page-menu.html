@@ -46,8 +46,6 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../main.css" />
   </head>
 
@@ -82,7 +80,11 @@
           <div class="nav__menu">
             <div class="nav__list">
               <div class="nav__item">
-                <a href="#" class="nav__link active">Mes Cartes</a>
+                <a href="#" class="nav__link active">Mes Menus du Jour</a>
+              </div>
+              <div class="nav__line"></div>
+              <div class="nav__item">
+                <a href="./page-carte.html" class="nav__link">Ma Carte</a>
               </div>
             </div>
           </div>
@@ -95,261 +97,6 @@
     </header>
 
     <main>
-      <section class="page-menu">
-        <!-- Section Swiper cartes menu -->
-        <div class="new section container-swiper">
-          <div class="new__container">
-            <div class="swiper new-swiper">
-              <div class="swiper-wrapper">
-                <article class="swiper-projet new__card swiper-slide">
-                  <a href="#">
-                    <div class="container-overlay">
-                      <div class="top-card">
-                        <div class="top-card-certification">
-                          <div class="overlay overlay-img">
-                            <button class="btn-overlay">
-                              <img
-                                class="items-card-menu"
-                                src="../media/svg/eye-solid.svg"
-                                alt="img view"
-                              />
-                            </button>
-                            <button class="btn-overlay">
-                              <img
-                                class="items-card-menu"
-                                src="../media/svg/trash-can-solid.svg"
-                                alt="img trash"
-                              />
-                            </button>
-                          </div>
-                          <span>Nom restaurant</span>
-                        </div>
-                      </div>
-                      <div class="items-card">
-                        <h3 class="items-card-title">Menu du jour</h3>
-                        <p class="items-card-datejour">01/01/2022</p>
-                      </div>
-                      <div class="items-price-and-type">
-                        <div class="repas">
-                          <h5 class="title_repas">Nos 3 formules du jour</h5>
-                          <div class="text_repas">
-                            <p class="name_repas">Plat du jour seul</p>
-                            <span class="prix">12€</span>
-                          </div>
-                          <div class="text_repas">
-                            <p class="name_repas">
-                              Entrée + plat ou Plat + Dessert
-                            </p>
-                            <span class="prix">16€</span>
-                          </div>
-                          <div class="text_repas">
-                            <h5 class="name_repas">
-                              Entrée : Salade ou Crudité
-                            </h5>
-                          </div>
-                          <div class="text_repas repas-et-soustitre">
-                            <h5 class="name_repas">
-                              Plat du jour 1: Colombo de cabri / Riz Haricots
-                              rouges
-                            </h5>
-                            <p class="name_repas name_repas-soustitre">
-                              Cabri local cuit au feu de bois et haricots rouges
-                              au lait de coco
-                            </p>
-                          </div>
-                          <div class="text_repas">
-                            <h5 class="name_repas">
-                              Plat du jour 2: Darne de dorade / Racines
-                            </h5>
-                          </div>
-                          <div class="text_repas">
-                            <h5 class="name_repas">
-                              Dessert : Glace / Salade de fruits
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="new__card-date">
-                        <p class="new__card-phrase">Bon appétit</p>
-                        <img
-                          src="../media/logos/QRcomlogo.png"
-                          alt="logo QRcom"
-                          class="img-card"
-                        />
-                        <span>Date création</span>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-                <article class="swiper-projet new__card swiper-slide">
-                  <a href="#">
-                    <div class="container-overlay">
-                      <div class="top-card">
-                        <div class="top-card-certification">
-                          <div class="overlay overlay-img">
-                            <button class="btn-overlay">
-                              <img
-                                class="items-card-menu"
-                                src="../media/svg/eye-solid.svg"
-                                alt="img view"
-                              />
-                            </button>
-                            <button class="btn-overlay">
-                              <img
-                                class="items-card-menu"
-                                src="../media/svg/trash-can-solid.svg"
-                                alt="img trash"
-                              />
-                            </button>
-                          </div>
-                          <span>Nom restaurant</span>
-                        </div>
-                      </div>
-                      <div class="items-card">
-                        <h3 class="items-card-title">Menu du jour</h3>
-                        <p class="items-card-datejour">01/01/2022</p>
-                      </div>
-                      <div class="items-price-and-type">
-                        <div class="repas">
-                          <h5 class="title_repas">Nos 3 formules du jour</h5>
-                          <div class="text_repas">
-                            <p class="name_repas">Plat du jour seul</p>
-                            <span class="prix">12€</span>
-                          </div>
-                          <div class="text_repas">
-                            <p class="name_repas">
-                              Entrée + plat ou Plat + Dessert
-                            </p>
-                            <span class="prix">16€</span>
-                          </div>
-                          <div class="text_repas">
-                            <h5 class="name_repas">
-                              Entrée : Salade ou Crudité
-                            </h5>
-                          </div>
-                          <div class="text_repas repas-et-soustitre">
-                            <h5 class="name_repas">
-                              Plat du jour 1: Colombo de cabri / Riz Haricots
-                              rouges
-                            </h5>
-                            <p class="name_repas name_repas-soustitre">
-                              Cabri local cuit au feu de bois et haricots rouges
-                              au lait de coco
-                            </p>
-                          </div>
-                          <div class="text_repas">
-                            <h5 class="name_repas">
-                              Plat du jour 2: Darne de dorade / Racines
-                            </h5>
-                          </div>
-                          <div class="text_repas">
-                            <h5 class="name_repas">
-                              Dessert : Glace / Salade de fruits
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="new__card-date">
-                        <p class="new__card-phrase">Bon appétit</p>
-                        <img
-                          src="../media/logos/QRcomlogo.png"
-                          alt="logo QRcom"
-                          class="img-card"
-                        />
-                        <span>Date création</span>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-                <article class="swiper-projet new__card swiper-slide">
-                  <a href="#">
-                    <div class="container-overlay">
-                      <div class="top-card">
-                        <div class="top-card-certification">
-                          <div class="overlay overlay-img">
-                            <button class="btn-overlay">
-                              <img
-                                class="items-card-menu"
-                                src="../media/svg/eye-solid.svg"
-                                alt="img view"
-                              />
-                            </button>
-                            <button class="btn-overlay">
-                              <img
-                                class="items-card-menu"
-                                src="../media/svg/trash-can-solid.svg"
-                                alt="img trash"
-                              />
-                            </button>
-                          </div>
-                        </div>
-                        <span>Nom restaurant</span>
-                      </div>
-                      <div class="items-card">
-                        <h3 class="items-card-title">Menu du jour</h3>
-                        <p class="items-card-datejour">01/01/2022</p>
-                      </div>
-                      <div class="items-price-and-type">
-                        <div class="repas">
-                          <h5 class="title_repas">Nos 3 formules du jour</h5>
-                          <div class="text_repas">
-                            <p class="name_repas">Plat du jour seul</p>
-                            <span class="prix">12€</span>
-                          </div>
-                          <div class="text_repas">
-                            <p class="name_repas">
-                              Entrée + plat ou Plat + Dessert
-                            </p>
-                            <span class="prix">16€</span>
-                          </div>
-                          <div class="text_repas">
-                            <h5 class="name_repas">
-                              Entrée : Salade ou Crudité
-                            </h5>
-                          </div>
-                          <div class="text_repas repas-et-soustitre">
-                            <h5 class="name_repas">
-                              Plat du jour 1: Colombo de cabri / Riz Haricots
-                              rouges
-                            </h5>
-                            <p class="name_repas name_repas-soustitre">
-                              Cabri local cuit au feu de bois et haricots rouges
-                              au lait de coco
-                            </p>
-                          </div>
-                          <div class="text_repas">
-                            <h5 class="name_repas">
-                              Plat du jour 2: Darne de dorade / Racines
-                            </h5>
-                          </div>
-                          <div class="text_repas">
-                            <h5 class="name_repas">
-                              Dessert : Glace / Salade de fruits
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="new__card-date">
-                        <p class="new__card-phrase">Bon appétit</p>
-                        <img
-                          src="../media/logos/QRcomlogo.png"
-                          alt="logo QRcom"
-                          class="img-card"
-                        />
-                        <span>Date création</span>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-              </div>
-
-              <!-- <div class="swiper-pagination"></div> -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-          </div>
-        </div>
-      </section>
       <div class="btn-crea">
         <a
           href="./page-administrateur.html"
@@ -361,14 +108,267 @@
           </button>
         </a>
       </div>
+      <section class="page-menu">
+            <article class="new__card">
+              <a href="#">
+                <div class="container-overlay">
+                  <div class="top-card">
+                    <div class="top-card-certification">
+                      <div class="overlay overlay-img">
+                        <button class="btn-overlay">
+                          <img
+                            class="items-card-menu"
+                            src="../media/svg/eye-solid.svg"
+                            alt="img view"
+                          />
+                        </button>
+                        <button class="btn-overlay">
+                          <img
+                            class="items-card-menu"
+                            src="../media/svg/circle-plus-solid.svg"
+                            alt="img plus"
+                          />
+                        </button>
+                        <button class="btn-overlay">
+                          <img
+                            class="items-card-menu"
+                            src="../media/svg/trash-can-solid.svg"
+                            alt="img trash"
+                          />
+                        </button>
+                      </div>
+                      <span>Nom restaurant</span>
+                    </div>
+                  </div>
+                  <div class="items-card">
+                    <h3 class="items-card-title">Menu du jour</h3>
+                    <p class="items-card-datejour">01/01/2022</p>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="repas">
+                      <h5 class="title_repas">Nos 3 formules du jour</h5>
+                      <div class="text_repas">
+                        <p class="name_repas">Plat du jour seul</p>
+                        <span class="price">12€</span>
+                      </div>
+                      <div class="text_repas">
+                        <!-- <p class="name_repas">
+                          Entrée + plat ou Plat + Dessert
+                        </p> -->
+                        <!-- <span class="price">16€</span> -->
+                      </div>
+                      <!-- <div class="text_repas">
+                        <h5 class="name_repas">Entrée : Salade ou Crudité</h5>
+                      </div> -->
+                      <div class="text_repas repas-et-soustitre">
+                        <!-- <h5 class="name_repas">
+                          Plat du jour 1: Colombo de cabri / Riz Haricots rouges
+                        </h5>
+                        <p class="name_repas name_repas-soustitre">
+                          Cabri local cuit au feu de bois et haricots rouges au
+                          lait de coco
+                        </p> -->
+                      </div>
+                      <!-- <div class="text_repas">
+                        <h5 class="name_repas">
+                          Plat du jour 2: Darne de dorade / Racines
+                        </h5>
+                      </div> -->
+                      <!-- <div class="text_repas">
+                        <h5 class="name_repas">
+                          Dessert : Glace / Salade de fruits
+                        </h5>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="new__card-date">
+                    <p class="new__card-phrase">Bon appétit</p>
+                    <img
+                      src="../media/logos/QRcomlogo.png"
+                      alt="logo QRcom"
+                      class="img-card"
+                    />
+                    <span>Date création</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="new__card">
+              <a href="#">
+                <div class="container-overlay">
+                  <div class="top-card">
+                    <div class="top-card-certification">
+                      <div class="overlay overlay-img">
+                        <button class="btn-overlay">
+                          <img
+                            class="items-card-menu"
+                            src="../media/svg/eye-solid.svg"
+                            alt="img view"
+                          />
+                        </button>
+                        <button class="btn-overlay">
+                          <img
+                            class="items-card-menu"
+                            src="../media/svg/circle-plus-solid.svg"
+                            alt="img plus"
+                          />
+                        </button>
+                        <button class="btn-overlay">
+                          <img
+                            class="items-card-menu"
+                            src="../media/svg/trash-can-solid.svg"
+                            alt="img trash"
+                          />
+                        </button>
+                      </div>
+                      <span>Nom restaurant</span>
+                    </div>
+                  </div>
+                  <div class="items-card">
+                    <h3 class="items-card-title">Menu du jour</h3>
+                    <p class="items-card-datejour">01/01/2022</p>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="repas">
+                      <h5 class="title_repas">Nos 3 formules du jour</h5>
+                      <div class="text_repas">
+                        <p class="name_repas">Plat du jour seul</p>
+                        <span class="price">12€</span>
+                      </div>
+                      <div class="text_repas">
+                        <p class="name_repas">
+                          Entrée + plat ou Plat + Dessert
+                        </p>
+                        <span class="price">16€</span>
+                      </div>
+                      <div class="text_repas">
+                        <h5 class="name_repas">Entrée : Salade ou Crudité</h5>
+                      </div>
+                      <div class="text_repas repas-et-soustitre">
+                        <h5 class="name_repas">
+                          Plat du jour 1: Colombo de cabri / Riz Haricots rouges
+                        </h5>
+                        <p class="name_repas name_repas-soustitre">
+                          Cabri local cuit au feu de bois et haricots rouges au
+                          lait de coco
+                        </p>
+                      </div>
+                      <div class="text_repas">
+                        <h5 class="name_repas">
+                          Plat du jour 2: Darne de dorade / Racines
+                        </h5>
+                      </div>
+                      <div class="text_repas">
+                        <h5 class="name_repas">
+                          Dessert : Glace / Salade de fruits
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="new__card-date">
+                    <p class="new__card-phrase">Bon appétit</p>
+                    <img
+                      src="../media/logos/QRcomlogo.png"
+                      alt="logo QRcom"
+                      class="img-card"
+                    />
+                    <span>Date création</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="new__card">
+              <a href="#">
+                <div class="container-overlay">
+                  <div class="top-card">
+                    <div class="top-card-certification">
+                      <div class="overlay overlay-img">
+                        <button class="btn-overlay">
+                          <img
+                            class="items-card-menu"
+                            src="../media/svg/eye-solid.svg"
+                            alt="img view"
+                          />
+                        </button>
+                        <button class="btn-overlay">
+                          <img
+                            class="items-card-menu"
+                            src="../media/svg/circle-plus-solid.svg"
+                            alt="img plus"
+                          />
+                        </button>
+                        <button class="btn-overlay">
+                          <img
+                            class="items-card-menu"
+                            src="../media/svg/trash-can-solid.svg"
+                            alt="img trash"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <span>Nom restaurant</span>
+                  </div>
+                  <div class="items-card">
+                    <h3 class="items-card-title">Menu du jour</h3>
+                    <p class="items-card-datejour">01/01/2022</p>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="repas">
+                      <h5 class="title_repas">Nos 3 formules du jour</h5>
+                      <div class="text_repas">
+                        <p class="name_repas">Plat du jour seul</p>
+                        <span class="price">12€</span>
+                      </div>
+                      <div class="text_repas">
+                        <p class="name_repas">
+                          Entrée + plat ou Plat + Dessert
+                        </p>
+                        <span class="price">16€</span>
+                      </div>
+                      <div class="text_repas">
+                        <h5 class="name_repas">Entrée : Salade ou Crudité</h5>
+                      </div>
+                      <div class="text_repas repas-et-soustitre">
+                        <h5 class="name_repas">
+                          Plat du jour 1: Colombo de cabri / Riz Haricots rouges
+                        </h5>
+                        <p class="name_repas name_repas-soustitre">
+                          Cabri local cuit au feu de bois et haricots rouges au
+                          lait de coco
+                        </p>
+                      </div>
+                      <div class="text_repas">
+                        <h5 class="name_repas">
+                          Plat du jour 2: Darne de dorade / Racines
+                        </h5>
+                      </div>
+                      <div class="text_repas">
+                        <h5 class="name_repas">
+                          Dessert : Glace / Salade de fruits
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="new__card-date">
+                    <p class="new__card-phrase">Bon appétit</p>
+                    <img
+                      src="../media/logos/QRcomlogo.png"
+                      alt="logo QRcom"
+                      class="img-card"
+                    />
+                    <span>Date création</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+      </section>
+      
     </main>
 
     <!-- ===== IONICONS ===== -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-    <!--=============== SWIPER JS ===============-->
-    <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/main.js"></script>
 
-    <!-- <script src="../js/script.js" type="text/javascript"></script> -->
   </body>
 </html>

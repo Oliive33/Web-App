@@ -14,9 +14,10 @@ body {
 }
 // =================Section top-modif-menu=================//
 .container-administrateur {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
-  min-height: 200%;
+  height: 100%;
   background-image: url(./media/basic-pics/back-admin.jpg);
   background-attachment: fixed;
   background-position: center;

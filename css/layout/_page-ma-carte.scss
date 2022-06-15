@@ -10,11 +10,11 @@
   margin: 0;
   padding: 0;
 }
-.container-global-client {
+.container-global-carte {
   position: absolute;
   width: 100%;
   min-height: 100vh;
-  background-image: url(./media/basic-pics/back-client.jpg);
+  background-image: url(./media/basic-pics/back-ma-carte.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 50px auto 50px;
+  margin: 20px auto 50px;
   z-index: 1000;
 }
 // ===============container client default=================//
@@ -173,6 +173,9 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .page-client {
+    margin: 50px auto 50px; //Modif 15/06 olive
+  }
   .top-modif-menu .titre-page-menu {
     margin: 15px 0 20px 0;
   }
@@ -184,6 +187,6 @@
   .container-client-parchemin,
   .container-client-default,
   .container-client-ardoise {
-    width: 329px;
+    width: 325px;
   }
 }

@@ -25,24 +25,3 @@ function linkAction() {
   navMenu.classList.remove("show");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
-/*=============== NEW SWIPER ===============*/
-let newSwiper = new Swiper(".new-swiper", {
-  spaceBetween: 20,
-  loop: "true",
-  slidesPerView: "auto",
-  centeredSlides: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-    dynamicBullets: false,
-  },
-  breakpoints: {
-    992: {
-      spaceBetween: 60,
-    },
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
