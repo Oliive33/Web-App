@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Retrouvez QRcom, une web application qui avec le scan d'un qr code vous permet de trouver des menus de restaurants près de chez vous. "
+    />
+    <!-- Protocole open graph -->
+    <meta property="og:title" content="Qr.kom" />
+    <meta property="og:type" content="web application" />
+    <meta
+      property="og:description"
+      content="Retrouvez QRcom, une web application qui avec le scan d'un qr code vous permet de trouver des menus de restaurants près de chez vous."
+    />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="./media/logos/QRcomlogo-300.jpg" />
+    <title>Page historique menus</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../media/logos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../media/logos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../media/logos/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../media/logos/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../media/logos/safari-pinned-tab.svg"
+      color="#060a0b"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <img
+        class="header-img"
+        src="../media/logos/QRcomlogo-300.jpg"
+        alt="logo web app"
+      />
+
+      <ion-icon
+        name="menu-outline"
+        class="header__toggle"
+        id="nav-toggle"
+      ></ion-icon>
+
+      <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+          <ion-icon
+            name="close-outline"
+            class="nav__close"
+            id="nav-close"
+          ></ion-icon>
+
+          <div class="nav__perfil">
+            <div class="nav__img">
+              <img src="../media/logos/QRcomlogo-300.jpg" alt="logo web app" />
+            </div>
+          </div>
+
+          <div class="nav__menu">
+            <div class="nav__list">
+              <div class="nav__item">
+                <a href="./page-menu.html" class="nav__link"
+                  >Mes Menus du Jour</a
+                >
+              </div>
+              <div class="nav__line"></div>
+              <div class="nav__item">
+                <a href="#" class="nav__link active">Ma Carte</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav__deconnexcion">
+            <button class="button btn-deconec">Déconnexion ➭</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main></main>
+
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
