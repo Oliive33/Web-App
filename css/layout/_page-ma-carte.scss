@@ -52,6 +52,10 @@
   margin: 20px auto 50px;
   z-index: 1000;
 }
+.container-carte-client {
+  background-color: $white-color;
+}
+
 // ===============container client default=================//
 .container-client-default {
   position: relative;
@@ -94,11 +98,6 @@
   font-family: $title-font;
   letter-spacing: 1px;
   margin: 52px 0px 15px 0;
-}
-.items-card-client .items-card-datejour {
-  font-family: $date-font;
-  font-size: 14px;
-  font-weight: 300;
 }
 .repas {
   display: flex;

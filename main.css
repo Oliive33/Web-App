@@ -2235,6 +2235,10 @@ body {
   z-index: 1000;
 }
 
+.container-carte-client {
+  background-color: #e6e7e9;
+}
+
 .container-client-default {
   position: relative;
   width: 350px;
@@ -2281,12 +2285,6 @@ body {
   font-family: "Hammersmith One", sans-serif;
   letter-spacing: 1px;
   margin: 52px 0px 15px 0;
-}
-
-.items-card-client .items-card-datejour {
-  font-family: "Hammersmith One", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
 }
 
 .repas {
@@ -2481,13 +2479,28 @@ img {
   width: 10%;
 }
 
+.container-carte-global {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .container-carte {
   width: 550px;
   height: 300px;
   position: relative;
   overflow: hidden;
   overflow-y: scroll;
-  margin: 0 auto;
+  margin: 20px 15px;
+  padding: 5px;
   -webkit-transform: translate(0%, 15%);
           transform: translate(0%, 15%);
   border-radius: 10px;

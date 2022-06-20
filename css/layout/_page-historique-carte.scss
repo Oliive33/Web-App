@@ -45,6 +45,12 @@ img {
   height: 10px;
   width: 10%;
 }
+.container-carte-global {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 .container-carte {
   width: 550px;
@@ -52,7 +58,8 @@ img {
   position: relative;
   overflow: hidden;
   overflow-y: scroll;
-  margin: 0 auto;
+  margin: 20px 15px;
+  padding: 5px;
   transform: translate(0%, 15%);
   border-radius: 10px;
   border: 2px solid #fff;
