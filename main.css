@@ -297,7 +297,7 @@ body {
   }
   .container {
     padding: 1rem;
-    margin: 90px auto 0;
+    margin: 150px auto 0;
   }
   .container h1 img {
     width: 55px;
@@ -337,6 +337,10 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+  .container-global {
+    width: 100%;
+    margin: 0 auto;
+  }
   .label {
     margin-left: 5px;
   }
